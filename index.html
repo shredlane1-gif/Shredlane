@@ -7,1096 +7,593 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <meta name="apple-mobile-web-app-title" content="Shredlane">
-<link rel="apple-touch-icon" href="data:image/png;base64,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">
-<title>Shredlane</title>
+<link rel="apple-touch-icon" href="data:image/png;base64,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\n" rel="apple-touch-icon">
+<script>
+  window.addEventListener('error', e => {
+    alert(`Error: ${e.message} at ${e.filename}:${e.lineno}`);
+  });
+</script>
 <style>
 :root {
   --bg: #060606;
-  --panel: #111111;
-  --panel2: #1a1a1a;
-  --accent: #ff4a4a;
-  --accent-rgb: 255, 74, 74;
-  --txt: #e0e0e0;
+  --panel: #0d0d0d;
+  --border: #1a1a1a;
+  --txt: #e5e5e5;
   --txt-dim: #888888;
-  --border: #222222;
-  --grn: #39d353;
-  --red: #f85149;
-  --gry2: #7d8590;
+  --accent: #2563eb;
+  --accent-dim: #1d4ed8;
+  --grn: #22c55e;
+  --red: #ef4444;
   --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 * { box-sizing: border-box; margin: 0; padding: 0; font-family: var(--font); -webkit-tap-highlight-color: transparent; }
-body { background: var(--bg); color: var(--txt); padding: 10px; font-size: 14px; line-height: 1.4; padding-bottom: 80px; }
-
-/* LAYOUT & UTILS */
-.hidden { display: none !important; }
-.card { background: var(--panel); border: 1px solid var(--border); border-radius: 8px; padding: 15px; margin-bottom: 12px; }
-.flex-between { display: flex; justify-content: space-between; align-items: center; }
-.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
-.grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
-
-/* TYPOGRAPHY */
-h2 { font-size: 18px; font-weight: 600; color: #fff; margin-bottom: 12px; }
-h3 { font-size: 14px; font-weight: 600; color: var(--txt-dim); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px; }
-.unit { font-size: 11px; color: var(--txt-dim); font-weight: normal; margin-left: 2px; }
-
-/* INPUTS & BUTTONS */
-input, select, textarea {
-  width: 100%; background: var(--panel2); border: 1px solid var(--border); border-radius: 6px;
-  color: #fff; padding: 10px; font-size: 14px; outline: none; transition: border 0.2s;
+body { background: var(--bg); color: var(--txt); padding-bottom: 70px; font-size: 14px; }
+.nav { display: flex; justify-content: space-around; background: var(--panel); border-top: 1px solid var(--border); position: fixed; bottom: 0; width: 100%; z-index: 100; box-shadow: 0 -4px 12px rgba(0,0,0,0.5); }
+.nav-item { padding: 12px; color: var(--txt-dim); font-size: 11px; text-align: center; text-decoration: none; flex: 1; display: flex; flex-direction: column; align-items: center; gap: 4px; border: none; background: none; cursor: pointer; }
+.nav-item svg { width: 20px; height: 20px; fill: currentColor; }
+.nav-item.active { color: var(--accent); font-weight: 600; }
+.page { display: none; padding: 16px; max-width: 600px; margin: 0 auto; animation: fadeIn 0.2s ease; }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+.page.active { display: block; }
+h2 { font-size: 20px; font-weight: 700; margin-bottom: 16px; color: #fff; letter-spacing: -0.5px; }
+.card { background: var(--panel); border: 1px solid var(--border); border-radius: 12px; padding: 16px; margin-bottom: 16px; box-shadow: 0 4px 6px rgba(0,0,0,0.2); }
+.form-group { margin-bottom: 14px; }
+.form-group label { display: block; font-size: 12px; color: var(--txt-dim); margin-bottom: 6px; font-weight: 500; }
+input[type="text"], input[type="number"], input[type="email"], input[type="password"], select, textarea {
+  width: 100%; padding: 10px 12px; background: #000; border: 1px solid var(--border); border-radius: 8px; color: #fff; font-size: 14px; outline: none; transition: border-color 0.2s;
 }
 input:focus, select:focus, textarea:focus { border-color: var(--accent); }
-textarea { resize: none; height: 60px; }
-label { display: block; font-size: 12px; color: var(--txt-dim); margin-bottom: 4px; font-weight: 500; }
-.input-group { margin-bottom: 10px; }
-
-.btn {
-  background: var(--panel2); border: 1px solid var(--border); color: #fff; padding: 10px 15px;
-  border-radius: 6px; font-size: 14px; font-weight: 500; cursor: pointer; display: inline-flex;
-  align-items: center; justify-content: center; gap: 6px; transition: all 0.2s;
-}
-.btn:active { transform: scale(0.98); }
-.btn-primary { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
-.btn-primary:disabled { background: #441111; border-color: #441111; color: #888; cursor: not-allowed; }
-.btn-sm { padding: 6px 10px; font-size: 12px; border-radius: 4px; }
-.btn-block { display: flex; width: 100%; }
-.btn-danger { background: #2a1414; border-color: #4a2222; color: var(--red); }
-.btn-secondary { background: #1c1c1e; border-color: #2c2c2e; color: #0a84ff; }
-
-/* TABS NAV */
-.nav-bar {
-  position: fixed; bottom: 0; left: 0; right: 0; background: rgba(17,17,17,0.9);
-  backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
-  border-top: 1px solid var(--border); display: flex; justify-content: space-around; padding: 8px 0 calc(8px + env(safe-area-inset-bottom)); z-index: 100;
-}
-.nav-item {
-  background: none; border: none; color: var(--txt-dim); display: flex; flex-direction: column;
-  align-items: center; gap: 4px; font-size: 10px; font-weight: 500; cursor: pointer; width: 20%;
-}
-.nav-item svg { width: 22px; height: 22px; fill: currentColor; }
-.nav-item.active { color: var(--accent); }
-
-/* DASHBOARD STATS */
-.stat-box { background: var(--panel2); border: 1px solid var(--border); border-radius: 6px; padding: 10px; text-align: center; }
-.stat-val { font-size: 20px; font-weight: 700; color: #fff; margin-top: 2px; }
-.stat-val.grn { color: var(--grn); }
-.stat-val.red { color: var(--red); }
-
-/* RECENT HISTORY & LOGS */
-.log-item { background: var(--panel2); border: 1px solid var(--border); border-radius: 6px; padding: 10px; margin-bottom: 8px; }
-.log-header { font-size: 12px; color: var(--txt-dim); margin-bottom: 4px; }
-.log-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 5px; font-size: 13px; }
-.log-notes { font-size: 12px; color: var(--gry2); font-style: italic; margin-top: 4px; border-top: 1px dashed #222; padding-top: 4px; }
-
-/* COMMUNITY / ADMIN FEED */
-.feed-item { border-left: 3px solid var(--accent); padding-left: 10px; margin-bottom: 15px; }
-.feed-user { font-weight: 600; color: #fff; font-size: 13px; }
-.feed-time { font-size: 11px; color: var(--txt-dim); }
-.feed-stats { margin-top: 4px; font-size: 13px; }
-.mc-item { background: var(--panel2); border: 1px solid var(--border); border-radius: 6px; padding: 10px; margin-bottom: 10px; }
-.mc-header { display: flex; justify-content: space-between; font-size: 12px; margin-bottom: 6px; }
-.mc-last { font-size: 12px; color: var(--txt); background: #111; padding: 6px; border-radius: 4px; margin-top: 6px; border: 1px solid #222; }
-
-/* TOAST */
-#toast {
-  position: fixed; top: 20px; left: 50%; transform: translateX(-50%) translateY(-20px);
-  background: rgba(0,0,0,0.9); border: 1px solid var(--border); color: #fff;
-  padding: 10px 20px; border-radius: 20px; z-index: 1000; font-size: 13px; font-weight: 500;
-  opacity: 0; pointer-events: none; transition: all 0.3s ease; box-shadow: 0 4px 12px rgba(0,0,0,0.5);
-}
-#toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
-
-/* AUTH */
-.auth-container { max-width: 320px; margin: 60px auto 0; text-align: center; }
-.auth-logo { font-size: 32px; font-weight: 800; color: #fff; letter-spacing: -1px; margin-bottom: 5px; }
-.auth-logo span { color: var(--accent); }
-.auth-desc { color: var(--txt-dim); font-size: 13px; margin-bottom: 25px; }
-
-/* CHARTS placeholder or minimal styling */
-.chart-container { position: relative; height: 160px; width: 100%; margin-top: 10px; background: #141414; border-radius: 6px; border: 1px solid #222; overflow: hidden; }
-
-/* CALENDAR / STREAK GRID */
-.streak-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; margin-top: 10px; }
-.streak-day { aspect-ratio: 1; background: var(--panel2); border: 1px solid var(--border); border-radius: 3px; display: flex; align-items: center; justify-content: center; font-size: 10px; color: var(--txt-dim); position: relative; }
-.streak-day.active { background: rgba(255,74,74,0.15); border-color: var(--accent); color: #fff; font-weight: bold; }
-.streak-day.future { opacity: 0.3; }
-.streak-day .dot { position: absolute; bottom: 2px; width: 3px; height: 3px; background: var(--grn); border-radius: 50%; }
-
-/* CUSTOM DIALOG BUTTONS IN POPUPS */
-.modal-overlay { position: fixed; top:0; left:0; right:0; bottom:0; background: rgba(0,0,0,0.7); z-index: 500; display: flex; align-items: center; justify-content: center; padding: 15px; }
-.modal-content { background: var(--panel); border: 1px solid var(--border); border-radius: 8px; width: 100%; max-width: 340px; padding: 15px; }
-
-/* SCROLLBARS */
-::-webkit-scrollbar { width: 4px; height: 4px; }
-::-webkit-scrollbar-track { background: var(--bg); }
-::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+.btn { background: var(--accent); color: #fff; border: none; border-radius: 8px; padding: 12px; width: 100%; font-size: 14px; font-weight: 600; cursor: pointer; display: flex; justify-content: center; align-items: center; gap: 8px; transition: background 0.2s; }
+.btn:hover { background: var(--accent-dim); }
+.btn-sec { background: transparent; border: 1px solid var(--border); color: var(--txt); }
+.btn-danger { background: var(--red); }
+.row { display: flex; gap: 12px; }
+.row .form-group { flex: 1; }
+.toast { position: fixed; bottom: 80px; left: 50%; transform: translateX(-50%); padding: 10px 20px; border-radius: 20px; font-size: 13px; font-weight: 500; z-index: 1000; box-shadow: 0 4px 12px rgba(0,0,0,0.3); display: none; text-align: center; max-width: 90%; }
+.toast.success { background: var(--grn); color: #fff; }
+.toast.error { background: var(--red); color: #fff; }
+.summary-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 16px; }
+.stat-box { background: var(--panel); border: 1px solid var(--border); border-radius: 10px; padding: 10px; text-align: center; }
+.stat-box .val { font-size: 16px; font-weight: 700; color: #fff; margin-bottom: 2px; }
+.stat-box .lbl { font-size: 10px; color: var(--txt-dim); text-transform: uppercase; letter-spacing: 0.5px; }
+.checkin-row { border-bottom: 1px solid var(--border); padding: 10px 0; font-size: 13px; display: flex; justify-content: space-between; align-items: center; }
+.checkin-row:last-child { border-bottom: none; }
+.admin-user-card { background: var(--panel); border: 1px solid var(--border); border-radius: 12px; padding: 12px; margin-bottom: 12px; }
+.admin-user-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+.badge { padding: 2px 6px; border-radius: 4px; font-size: 10px; font-weight: 600; text-transform: uppercase; }
+.badge.pending { background: #eab308; color: #000; }
+.badge.approved { background: var(--grn); color: #fff; }
+.flex-between { display: flex; justify-content: space-between; align-items: center; }
+.mb-4 { margin-bottom: 16px; }
+.text-dim { color: var(--txt-dim); }
+.text-center { text-align: center; }
 </style>
-<script src="https://cdn.jsdelivr.net/npm/gun/gun.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 </head>
 <body>
 
-<div id="toast">Toast Message</div>
+<div id="toast" class="toast"></div>
 
-<div id="view-auth" class="auth-container hidden">
-  <div class="auth-logo">SHRED<span>LANE</span></div>
-  <div class="auth-desc">Hyper-Minimal community tracking.</div>
-  <div class="card" style="text-align: left;">
-    <div class="input-group">
-      <label>Email Address</label>
-      <input type="email" id="auth-email" placeholder="you@example.com" autocomplete="email">
-    </div>
-    <div class="input-group">
-      <label>Passcode (min 6 chars)</label>
-      <input type="password" id="auth-pass" placeholder="••••••">
-    </div>
-    <div class="input-group id-name-field hidden">
-      <label>Your Name / Alias</label>
-      <input type="text" id="auth-name" placeholder="e.g. Alex Kettlebell">
-    </div>
-    <button class="btn btn-primary btn-block" id="btn-auth-submit" style="margin-top: 15px;">Continue</button>
-    <div style="text-align: center; margin-top: 15px; font-size: 12px;">
-      <a href="#" id="auth-toggle" style="color: var(--accent); text-decoration: none; font-weight: 500;">Need to create an account? Sign Up</a>
-    </div>
+<div id="page-auth" class="page active">
+  <div style="text-align:center; margin: 40px 0 20px 0;">
+    <h1 style="font-size:32px; font-weight:800; letter-spacing:-1px; color:#fff;">SHREDLANE</h1>
+    <p style="color:var(--txt-dim); font-size:14px; margin-top:4px;">Community-driven habit tracking</p>
   </div>
-</div>
-
-<div id="view-waiting" class="auth-container hidden">
-  <div class="auth-logo">SHRED<span>LANE</span></div>
-  <div class="card" style="margin-top: 20px;">
-    <div style="font-size: 40px; margin-bottom: 10px;">⏳</div>
-    <h2>Approval Pending</h2>
-    <p style="color: var(--txt-dim); font-size: 13px; margin-bottom: 15px;">Your account request has been submitted. An admin needs to approve you before you can enter the lane.</p>
-    <button class="btn btn-danger btn-block btn-sm" onclick="logout()">Log Out / Check Status</button>
-  </div>
-</div>
-
-<div id="app-body" class="hidden">
   
-  <div class="flex-between" style="margin-bottom: 15px; border-bottom: 1px solid var(--border); padding-bottom: 10px;">
-    <div>
-      <h1 style="font-size: 20px; font-weight: 800; letter-spacing: -0.5px;" id="app-title-text">SHREDLANE</h1>
-      <div style="font-size: 11px; color: var(--txt-dim);" id="user-welcome">Loading...</div>
+  <div class="card" id="login-form">
+    <h2 style="margin-bottom:12px;">Sign In</h2>
+    <div class="form-group">
+      <label>Email Address</label>
+      <input type="email" id="login-email" placeholder="you@example.com">
     </div>
-    <div>
-      <button class="btn btn-sm" id="btn-sync-status" onclick="triggerManualSync()" style="font-size: 11px; padding: 4px 8px; color: var(--grn); background: #0c1f11; border-color: #1b3a22;">● Connected</button>
+    <div class="form-group">
+      <label>Password</label>
+      <input type="password" id="login-pass" placeholder="••••••••">
     </div>
+    <button class="btn" onclick="handleLogin()">Sign In</button>
+    <p style="text-align:center; margin-top:16px; color:var(--txt-dim); font-size:13px;">
+      Don't have an account? <a href="#" style="color:var(--accent); text-decoration:none;" onclick="toggleAuth(false)">Sign up</a>
+    </p>
   </div>
 
-  <div id="tab-dash" class="tab-content hidden">
-    <div class="grid-3" style="margin-bottom: 12px;">
-      <div class="stat-box">
-        <label>Current Wt</label>
-        <div class="stat-val" id="stat-weight">--<span class="unit">kg</span></div>
-      </div>
-      <div class="stat-box">
-        <label>7d Weight Δ</label>
-        <div class="stat-val" id="stat-w-diff">--</div>
-      </div>
-      <div class="stat-box">
-        <label>Current Waist</label>
-        <div class="stat-val" id="stat-waist">--<span class="unit">in</span></div>
-      </div>
+  <div class="card" id="register-form" style="display:none;">
+    <h2 style="margin-bottom:12px;">Create Account</h2>
+    <div class="form-group">
+      <label>Full Name</label>
+      <input type="text" id="reg-name" placeholder="John Doe">
     </div>
-    <div class="grid-3" style="margin-bottom: 15px;">
-      <div class="stat-box">
-        <label>Avg Steps</label>
-        <div class="stat-val" id="stat-steps">--</div>
-      </div>
-      <div class="stat-box">
-        <label>Avg Sleep</label>
-        <div class="stat-val" id="stat-sleep">--<span class="unit">h</span></div>
-      </div>
-      <div class="stat-box">
-        <label>Avg Hunger</label>
-        <div class="stat-val" id="stat-hunger">--</div>
-      </div>
+    <div class="form-group">
+      <label>Email Address</label>
+      <input type="email" id="reg-email" placeholder="you@example.com">
     </div>
-
-    <div class="card">
-      <div class="flex-between">
-        <h3>Weight Trend (Last 14 Logs)</h3>
-        <span style="font-size: 11px; color: var(--txt-dim);" id="chart-range-label"></span>
-      </div>
-      <div class="chart-container" id="trend-chart-box">
-        <svg id="trend-svg" width="100%" height="160" style="display: block;"></svg>
-      </div>
+    <div class="form-group">
+      <label>Password</label>
+      <input type="password" id="reg-pass" placeholder="Minimum 6 characters">
     </div>
-
-    <div class="card">
-      <div class="flex-between">
-        <h3>Check-in Streak Calendar</h3>
-        <div style="font-size: 12px; color: #fff; font-weight: 600;"><span id="streak-count-val">0</span> Day Streak</div>
-      </div>
-      <div class="streak-grid" id="streak-grid-box"></div>
-    </div>
+    <button class="btn" onclick="handleRegister()">Create Account</button>
+    <p style="text-align:center; margin-top:16px; color:var(--txt-dim); font-size:13px;">
+      Already have an account? <a href="#" style="color:var(--accent); text-decoration:none;" onclick="toggleAuth(true)">Sign in</a>
+    </p>
   </div>
-
-  <div id="tab-checkin" class="tab-content hidden">
-    <div class="card">
-      <h2 id="checkin-title-date">Today's Entry</h2>
-      <div class="grid-2">
-        <div class="input-group">
-          <label>Body Weight (kg)</label>
-          <input type="number" step="0.05" id="f-weight" placeholder="00.00" inputmode="decimal">
-        </div>
-        <div class="input-group">
-          <label>Waist Size (inches)</label>
-          <input type="number" step="0.125" id="f-waist" placeholder="00.0" inputmode="decimal">
-        </div>
-      </div>
-      <div class="grid-3" style="margin-top: 5px;">
-        <div class="input-group">
-          <label>Steps</label>
-          <input type="number" step="1" id="f-steps" placeholder="10000" inputmode="numeric">
-        </div>
-        <div class="input-group">
-          <label>Sleep (hours)</label>
-          <input type="number" step="0.5" id="f-sleep" placeholder="7.5" inputmode="decimal">
-        </div>
-        <div class="input-group">
-          <label>Hunger (1-10)</label>
-          <select id="f-hunger">
-            <option value="">Select...</option>
-            <option value="1">1 - Stuffed / None</option>
-            <option value="2">2</option>
-            <option value="3">3 - Normal Full</option>
-            <option value="4">4</option>
-            <option value="5">5 - Satisfied / Neutral</option>
-            <option value="6">6</option>
-            <option value="7">7 - Light Hunger</option>
-            <option value="8">8 - Distinctly Hungry</option>
-            <option value="9">9</option>
-            <option value="10">10 - Ravaging / Starving</option>
-          </select>
-        </div>
-      </div>
-      <div class="input-group" style="margin-top: 5px;">
-        <label>Daily Notes / Reflections</label>
-        <textarea id="f-notes" placeholder="How did training go? Energy levels? Adherence notes..."></textarea>
-      </div>
-      <button class="btn btn-primary btn-block" style="margin-top: 10px;" id="btn-save-checkin" onclick="saveCheckin()">Commit Daily Entry</button>
-    </div>
-
-    <div class="card" style="margin-top: 15px;">
-      <h3>Quick Entry Log History</h3>
-      <div id="quick-history-list" style="margin-top: 10px; max-height: 250px; overflow-y: auto; padding-right: 2px;"></div>
-    </div>
-  </div>
-
-  <div id="tab-comm" class="tab-content hidden">
-    <div class="card" style="padding: 10px; background: #0a0a0a; margin-bottom: 12px; display: flex; gap: 8px; overflow-x: auto; white-space: nowrap;" id="comm-avatars-bar">
-      </div>
-    <div id="comm-feed-box">
-      </div>
-  </div>
-
-  <div id="tab-history" class="tab-content hidden">
-    <div class="card flex-between" style="padding: 10px 15px;">
-      <div>
-        <h2>Comprehensive Log Archive</h2>
-        <div style="font-size:11px; color:var(--txt-dim)">View, modify, or export raw data profiles.</div>
-      </div>
-      <button class="btn btn-sm btn-secondary" onclick="exportPDF()">Export PDF</button>
-    </div>
-    <div id="full-history-list"></div>
-  </div>
-
-  <div id="tab-admin" class="tab-content hidden">
-    <div id="admin-panel-box" class="card hidden" style="border-color: #332211; background: #16120e;">
-      <h2 style="color: #ff9f43;">👑 Community Registry Control</h2>
-      <div id="admin-applicants-list" style="margin-top: 10px;"></div>
-    </div>
-
-    <div class="card">
-      <h2>Profile Preferences</h2>
-      <div class="input-group">
-        <label>Display Alias / Name</label>
-        <div class="flex-between" style="gap:10px;">
-          <input type="text" id="pref-name" placeholder="Display Alias">
-          <button class="btn btn-sm" onclick="saveProfileName()">Update</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="card">
-      <h2>Data Interchange & Portability</h2>
-      <p style="color: var(--txt-dim); font-size: 12px; margin-bottom: 12px;">Back up your check-in database file onto local storage array or migrate profiles across system clusters.</p>
-      <div class="grid-2">
-        <button class="btn btn-sm btn-block" onclick="exportJSON()">Backup JSON</button>
-        <button class="btn btn-sm btn-block" onclick="document.getElementById('import-file-input').click()">Restore JSON</button>
-      </div>
-      <input type="file" id="import-file-input" class="hidden" accept=".json" onchange="importJSON(event)">
-    </div>
-
-    <div class="card" style="border-color: #331111;">
-      <h2>System Termination</h2>
-      <p style="color: var(--txt-dim); font-size: 12px; margin-bottom: 12px;">Sign out of this session token. Local mesh cryptographic replication remains active inside peer environments.</p>
-      <button class="btn btn-danger btn-sm btn-block" onclick="logout()">Terminate Current Session</button>
-    </div>
-  </div>
-
-  <nav class="nav-bar">
-    <button class="nav-item active" onclick="switchTab('dash')">
-      <svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
-      Dashboard
-    </button>
-    <button class="nav-item" onclick="switchTab('checkin')">
-      <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/></svg>
-      Check-In
-    </button>
-    <button class="nav-item" onclick="switchTab('comm')">
-      <svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
-      Lane Feed
-    </button>
-    <button class="nav-item" onclick="switchTab('history')">
-      <svg viewBox="0 0 24 24"><path d="M13 3c-4.97 0-9 4.03-9 9H1l3.89 3.89.07.14L9 12H6c0-3.87 3.13-7 7-7s7 3.13 7 7-3.13 7-7 7c-1.93 0-3.68-.79-4.94-2.06l-1.42 1.42C8.27 19.99 10.51 21 13 21c4.97 0 9-4.03 9-9s-4.03-9-9-9zm-1 5v5l4.28 2.54.72-1.21-3.5-2.08V8H12z"/></svg>
-      History
-    </button>
-    <button class="nav-item" onclick="switchTab('admin')">
-      <svg viewBox="0 0 24 24"><path d="M19.43 12.98c.04-.32.07-.64.07-.98s-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.23-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98s.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.23.09.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zM12 15.5c-1.93 0-3-1.07-3-3s1.07-3 3-3 3 1.07 3 3-1.07 3-3 3z"/></svg>
-      Config
-    </button>
-  </nav>
-
 </div>
+
+<div id="page-home" class="page">
+  <div class="flex-between mb-4">
+    <div>
+      <h2 style="margin-bottom:0;" id="user-greeting">Hey there!</h2>
+      <p style="color:var(--txt-dim); font-size:12px;" id="today-date"></p>
+    </div>
+    <span class="badge approved" id="user-status-badge">Approved</span>
+  </div>
+
+  <div id="pending-alert" class="card" style="background:#231900; border-color:#eab308; display:none;">
+    <p style="color:#fef08a; font-weight:500;">⏳ Account Pending Approval</p>
+    <p style="color:#ca8a04; font-size:12px; margin-top:4px;">An admin needs to verify you before your logs show up on the community dashboard.</p>
+  </div>
+
+  <div class="summary-grid">
+    <div class="stat-box"><div class="val" id="stat-wt">-</div><div class="lbl">Weight (kg)</div></div>
+    <div class="stat-box"><div class="val" id="stat-waist">-</div><div class="lbl">Waist (in)</div></div>
+    <div class="stat-box"><div class="val" id="stat-steps">-</div><div class="lbl">Steps</div></div>
+  </div>
+
+  <div class="card">
+    <h3>Community Feed</h3>
+    <p class="text-dim" style="font-size:12px; margin-bottom:12px;">Latest logs from approved athletes</p>
+    <div id="community-feed"></div>
+  </div>
+</div>
+
+<div id="page-log" class="page">
+  <h2>Daily Check-In</h2>
+  <div class="card">
+    <div class="form-group">
+      <label>Date</label>
+      <input type="date" id="log-date">
+    </div>
+    <div class="row">
+      <div class="form-group">
+        <label>Weight (kg)</label>
+        <input type="number" step="0.1" id="log-weight" placeholder="00.0">
+      </div>
+      <div class="form-group">
+        <label>Waist (in)</label>
+        <input type="number" step="0.1" id="log-waist" placeholder="00.0">
+      </div>
+    </div>
+    <div class="row">
+      <div class="form-group">
+        <label>Daily Steps</label>
+        <input type="number" id="log-steps" placeholder="10,000">
+      </div>
+      <div class="form-group">
+        <label>Sleep (Hours)</label>
+        <input type="number" step="0.5" id="log-sleep" placeholder="8">
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Hunger Level (1-10)</label>
+      <select id="log-hunger">
+        <option value="1">1 - Full / No Appetite</option>
+        <option value="2">2</option>
+        <option value="3">3 - Light Appetite</option>
+        <option value="4">4</option>
+        <option value="5">5 - Moderate Hunger</option>
+        <option value="6">6</option>
+        <option value="7">7 - High Hunger</option>
+        <option value="8">8</option>
+        <option value="9">9 - Extremely Hungry</option>
+        <option value="10">10 - Unmanageable / Ravenous</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>Notes / Context</label>
+      <textarea id="log-notes" rows="2" placeholder="Energy levels, stress, missed targets..."></textarea>
+    </div>
+    <button class="btn" onclick="submitCheckin()">Save Daily Log</button>
+  </div>
+</div>
+
+<div id="page-history" class="page">
+  <div class="flex-between mb-4">
+    <h2>Your Log History</h2>
+    <button class="btn btn-sec" style="width:auto; padding:6px 12px; font-size:12px;" onclick="exportPDF()">Export PDF</button>
+  </div>
+  <div class="card" style="padding:0 16px;">
+    <div id="history-list"></div>
+  </div>
+</div>
+
+<div id="page-admin" class="page">
+  <h2>Admin Dashboard</h2>
+  <div class="card">
+    <h3>Community Roster</h3>
+    <p class="text-dim" style="font-size:12px; margin-bottom:12px;">Approve new accounts or view athlete metrics</p>
+    <div id="admin-roster"></div>
+  </div>
+</div>
+
+<nav class="nav" id="main-nav" style="display:none;">
+  <button class="nav-item active" onclick="switchPage('home')">
+    <svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+    Feed
+  </button>
+  <button class="nav-item" onclick="switchPage('log')">
+    <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+    Log
+  </button>
+  <button class="nav-item" onclick="switchPage('history')">
+    <svg viewBox="0 0 24 24"><path d="M13 3c-4.97 0-9 4.03-9 9H1l3.89 3.89.07.14L9 12H6c0-3.87 3.13-7 7-7s7 3.13 7 7-3.13 7-7 7c-1.93 0-3.68-.79-4.94-2.06l-1.42 1.42C8.27 19.99 10.51 21 13 21c4.97 0 9-4.03 9-9s-4.03-9-9-9zm-1 5v5l4.28 2.54.72-1.21-3.5-2.08V8H12z"/></svg>
+    History
+  </button>
+  <button class="nav-item" id="nav-admin-btn" onclick="switchPage('admin')" style="display:none;">
+    <svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5-4-8-4z"/></svg>
+    Admin
+  </button>
+  <button class="nav-item" onclick="handleLogout()">
+    <svg viewBox="0 0 24 24"><path d="M10.09 15.59L11.5 17l5-5-5-5-1.41 1.41L12.67 11H3v2h9.67l-2.58 2.59zM19 3H5c-1.11 0-2 .9-2 2v4h2V5h14v14H5v-4h2v4h14V5c0-1.1-.9-2-2-2z"/></svg>
+    Logout
+  </button>
+</nav>
 
 <script>
 // ═══════════════════════════════════════
-// THE 5 TOP FUNCTIONS REQUESTED BY USER
+// DATABASE LAYER (LOCALSTORAGE ENGINE)
 // ═══════════════════════════════════════
+const ADMIN_EMAIL = 'coach@shredlane.com';
 
 function gDB() {
-  return JSON.parse(localStorage.getItem('shredlane_db_v1')) || { users: {}, checkins: {} };
+  let d = localStorage.getItem('shredlane_db');
+  if(!d) {
+    d = {
+      users: {
+        'coach@shredlane.com': { name: 'Coach / Admin', email: 'coach@shredlane.com', pass: 'coach123', status: 'approved', isAdmin: true }
+      },
+      checkins: {}
+    };
+    localStorage.setItem('shredlane_db', JSON.stringify(d));
+    return d;
+  }
+  return JSON.parse(d);
 }
 
 function sDB(d) {
-  localStorage.setItem('shredlane_db_v1', JSON.stringify(d));
-  syncDB();
+  localStorage.setItem('shredlane_db', JSON.stringify(d));
 }
 
-function syncDB() {
-  if (!uE || !gun) return;
-  const d = gDB();
-  gun.get('shredlane_v1_cluster').get('state').put(JSON.stringify(d));
-}
+let cUser = null;
 
-function getLocalLogs() {
-  if (!uE) return [];
-  const d = gDB();
-  const uLogs = d.checkins[uE] || {};
-  return Object.keys(uLogs)
-    .map(k => uLogs[k])
-    .sort((a, b) => b.date.localeCompare(a.date));
-}
-
-function fetchUserLatest(email) {
-  const d = gDB();
-  const uLogs = d.checkins[email] || {};
-  const dates = Object.keys(uLogs).sort();
-  if (!dates.length) return null;
-  return uLogs[dates[dates.length - 1]];
-}
-
-// ═══════════════════════════════════════
-// INITIALIZATION & GLOBAL PROFILE SYSTEM STATE
-// ═══════════════════════════════════════
-let gun = null;
-let uE = null; // User email state cache token
-let uRole = 'user';
-let activeTab = 'dash';
-
-// GunDB network array setup
-try {
-  gun = Gun(['https://gun-manhattan.herokuapp.com/gun', 'https://relay.scuttlebutt.eu/gun']);
-} catch(e) {
-  console.log("Mesh networking system failure. Operating in localized silo sandbox mode.");
-}
-
-// System initialization bootstrap
-document.addEventListener('DOMContentLoaded', () => {
-  setupAuthEvents();
-  checkSavedSession();
+window.addEventListener('DOMContentLoaded', () => {
+  gDB(); // Initialize
+  document.getElementById('log-date').value = new Date().toISOString().split('T')[0];
+  document.getElementById('today-date').innerText = new Date().toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
   
-  // Real-time remote cloud node subscription hooks
-  if(gun) {
-    gun.get('shredlane_v1_cluster').get('state').on((data) => {
-      if(!data) return;
-      try {
-        const remoteDB = JSON.parse(data);
-        const localDB = gDB();
-        
-        // Deep verification merger strategy sequence
-        let structureMutated = false;
-        
-        // Sync Users Matrix
-        for(let em in remoteDB.users) {
-          if(!localDB.users[em] || (remoteDB.users[em].status === 'approved' && localDB.users[em].status !== 'approved')) {
-            localDB.users[em] = remoteDB.users[em];
-            structureMutated = true;
-          }
-        }
-        // Sync Logs Checkins Structs Array
-        for(let em in remoteDB.checkins) {
-          if(!localDB.checkins[em]) {
-            localDB.checkins[em] = {};
-          }
-          for(let dt in remoteDB.checkins[em]) {
-            if(!localDB.checkins[em][dt]) {
-              localDB.checkins[em][dt] = remoteDB.checkins[em][dt];
-              structureMutated = true;
-            }
-          }
-        }
-        
-        if(structureMutated) {
-          localStorage.setItem('shredlane_db_v1', JSON.stringify(localDB));
-          if(uE) {
-            evaluateUserStatusAndRender();
-          }
-        }
-      } catch(err) {
-        console.error("Database compilation sync error context package", err);
-      }
-    });
+  // Auto-fill login credentials if testing
+  document.getElementById('login-email').value = '';
+  
+  const saved = localStorage.getItem('shredlane_session');
+  if(saved) {
+    const d = gDB();
+    if(d.users[saved]) {
+      cUser = d.users[saved];
+      onLoginSuccess();
+    }
   }
 });
 
-function checkSavedSession() {
-  const savedEmail = localStorage.getItem('shredlane_session_email');
-  if(savedEmail) {
-    uE = savedEmail;
-    evaluateUserStatusAndRender();
-  } else {
-    showView('view-auth');
+// ═══════════════════════════════════════
+// VIEW CONTROLLER
+// ═══════════════════════════════════════
+function switchPage(pId) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.nav-item').forEach(i => i.classList.remove('active'));
+  
+  const targetPage = document.getElementById(`page-${pId}`);
+  if(targetPage) targetPage.classList.add('active');
+  
+  // Handle nav highlight matching
+  const btnIdx = { 'home': 0, 'log': 1, 'history': 2, 'admin': 3 };
+  const navItems = document.querySelectorAll('.nav-item');
+  if(btnIdx[pId] !== undefined && navItems[btnIdx[pId]]) {
+    navItems[btnIdx[pId]].classList.add('active');
   }
+
+  if(pId === 'home') renderHome();
+  if(pId === 'history') renderHistory();
+  if(pId === 'admin') renderAdmin();
 }
 
-function showView(viewId) {
-  document.getElementById('view-auth').classList.add('hidden');
-  document.getElementById('view-waiting').classList.add('hidden');
-  document.getElementById('app-body').classList.add('hidden');
-  document.getElementById(viewId).classList.remove('hidden');
+function toggleAuth(showLogin) {
+  document.getElementById('login-form').style.display = showLogin ? 'block' : 'none';
+  document.getElementById('register-form').style.display = showLogin ? 'none' : 'block';
+}
+
+function toast(msg, type='g') {
+  const t = document.getElementById('toast');
+  t.innerText = msg;
+  t.className = `toast ${type === 'g' ? 'success' : 'error'}`;
+  t.style.display = 'block';
+  setTimeout(() => { t.style.display = 'none'; }, 3000);
 }
 
 // ═══════════════════════════════════════
-// IDENTITY VERIFICATION, AUTH & MEMBERSHIP ACCESS
+// AUTHENTICATION CONTROLLER
 // ═══════════════════════════════════════
-let isSignUpMode = false;
-
-function setupAuthEvents() {
-  const toggleBtn = document.getElementById('auth-toggle');
-  const nameField = document.querySelector('.id-name-field');
-  const submitBtn = document.getElementById('btn-auth-submit');
+function handleLogin() {
+  const email = document.getElementById('login-email').value.trim().toLowerCase();
+  const pass = document.getElementById('login-pass').value;
   
-  toggleBtn.addEventListener('click', (e) => {
-    e.preventDefault();
-    isSignUpMode = !isSignUpMode;
-    if(isSignUpMode) {
-      nameField.classList.remove('hidden');
-      submitBtn.innerText = 'Register Security Application';
-      toggleBtn.innerText = 'Have an authorized credential? Log In';
-    } else {
-      nameField.classList.add('hidden');
-      submitBtn.innerText = 'Continue';
-      toggleBtn.innerText = 'Need to create an account? Sign Up';
-    }
-  });
-  
-  submitBtn.addEventListener('click', () => {
-    const email = document.getElementById('auth-email').value.trim().toLowerCase();
-    const pass = document.getElementById('auth-pass').value;
-    const name = document.getElementById('auth-name').value.trim();
-    
-    if(!email || !pass || pass.length < 6) {
-      toast('❌ Invalid Email context or cryptographic passcode too short', 'r');
-      return;
-    }
-    
-    const db = gDB();
-    
-    if(isSignUpMode) {
-      if(!name) { toast('❌ Display name mapping required', 'r'); return; }
-      if(db.users[email]) { toast('❌ Credentials token already registered', 'r'); return; }
-      
-      // First registered node becomes root administration key cluster automatically
-      const setupAdmin = Object.keys(db.users).length === 0;
-      
-      db.users[email] = {
-        email: email,
-        pass: pass, // Simple localized structural string comparison checks for demo integrity
-        name: name,
-        status: setupAdmin ? 'approved' : 'pending',
-        role: setupAdmin ? 'admin' : 'user'
-      };
-      sDB(db);
-      
-      toast(setupAdmin ? '👑 Genesis Admin Node established' : '✅ Registration submitted for verification', 'g');
-      uE = email;
-      evaluateUserStatusAndRender();
-    } else {
-      // Login routine processing
-      const userRecord = db.users[email];
-      if(!userRecord || userRecord.pass !== pass) {
-        toast('❌ Access denied. Verification signature invalid', 'r');
-        return;
-      }
-      uE = email;
-      localStorage.setItem('shredlane_session_email', email);
-      toast('🔒 Cryptographic signature verified', 'g');
-      evaluateUserStatusAndRender();
-    }
-  });
-}
-
-function evaluateUserStatusAndRender() {
-  const db = gDB();
-  const user = db.users[uE];
-  
-  if(!user) {
-    logout();
-    return;
-  }
-  
-  uRole = user.role || 'user';
-  document.getElementById('user-welcome').innerText = `${user.name} (${uE}) · Role: ${uRole.toUpperCase()}`;
-  
-  if(uRole === 'admin') {
-    document.getElementById('admin-panel-box').classList.remove('hidden');
-  } else {
-    document.getElementById('admin-panel-box').classList.add('hidden');
-  }
-  
-  if(user.status === 'approved') {
-    showView('app-body');
-    localStorage.setItem('shredlane_session_email', uE);
-    document.getElementById('pref-name').value = user.name || '';
-    switchTab(activeTab);
-  } else {
-    showView('view-waiting');
-  }
-}
-
-function logout() {
-  uE = null;
-  uRole = 'user';
-  localStorage.removeItem('shredlane_session_email');
-  document.getElementById('auth-email').value = '';
-  document.getElementById('auth-pass').value = '';
-  document.getElementById('auth-name').value = '';
-  showView('view-auth');
-}
-
-function triggerManualSync() {
-  toast('📡 Broadcasting local nodes across decentralized data mesh...', 'g');
-  syncDB();
-}
-
-// ═══════════════════════════════════════
-// ROUTING LAYER ENGINE INTERFACE
-// ═══════════════════════════════════════
-function switchTab(tabId) {
-  activeTab = tabId;
-  document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
-  document.querySelectorAll('.nav-item').forEach(el => el.classList.remove('active'));
-  
-  document.getElementById(`tab-${tabId}`).classList.remove('hidden');
-  
-  // Highlighting active button array indexes safely
-  const btnIdxMap = { 'dash':0, 'checkin':1, 'comm':2, 'history':3, 'admin':4 };
-  const items = document.querySelectorAll('.nav-item');
-  if(items[btnIdxMap[tabId]]) {
-    items[btnIdxMap[tabId]].classList.add('active');
-  }
-  
-  // Set current checkin date selector to localized current framework timestamp
-  if(tabId === 'checkin') {
-    const todayStr = new Date().toLocaleDateString('en-CA');
-    document.getElementById('checkin-title-date').innerText = `Check-in Protocol · ${todayStr}`;
-    prefillCheckinForm(todayStr);
-  }
-  
-  // Contextual view re-render execution matrices
-  if(tabId === 'dash') renderDashboard();
-  if(tabId === 'comm') renderCommunity();
-  if(tabId === 'history') renderHistory();
-  if(tabId === 'admin') renderAdmin();
-}
-
-// ═══════════════════════════════════════
-// CHECK-IN PROCESSING ENGINE
-// ═══════════════════════════════════════
-function prefillCheckinForm(dateStr) {
-  const d = gDB();
-  const log = d.checkins[uE]?.[dateStr];
-  
-  if(log) {
-    document.getElementById('f-weight').value = log.weight || '';
-    document.getElementById('f-waist').value = log.waist || '';
-    document.getElementById('f-steps').value = log.steps || '';
-    document.getElementById('f-sleep').value = log.sleep || '';
-    document.getElementById('f-hunger').value = log.hunger || '';
-    document.getElementById('f-notes').value = log.notes || '';
-    document.getElementById('btn-save-checkin').innerText = 'Overwrite Committed Entry';
-  } else {
-    // Structural cascade fallback index logic initialization parameters
-    const logs = getLocalLogs();
-    if(logs.length > 0) {
-      document.getElementById('f-weight').value = logs[0].weight || '';
-      document.getElementById('f-waist').value = logs[0].waist || '';
-    } else {
-      document.getElementById('f-weight').value = '';
-      document.getElementById('f-waist').value = '';
-    }
-    document.getElementById('f-steps').value = '';
-    document.getElementById('f-sleep').value = '';
-    document.getElementById('f-hunger').value = '';
-    document.getElementById('f-notes').value = '';
-    document.getElementById('btn-save-checkin').innerText = 'Commit Daily Entry';
-  }
-  
-  // Render minimal historical overview inline segment loop structure
-  const logs = getLocalLogs().slice(0, 3);
-  const container = document.getElementById('quick-history-list');
-  if(!logs.length) {
-    container.innerHTML = `<div style="text-align:center; color:var(--txt-dim); font-size:12px; padding:10px;">Zero operational logs allocated inside profile space.</div>`;
-    return;
-  }
-  container.innerHTML = logs.map(l => `
-    <div class="log-item" style="font-size:12px; padding:8px; margin-bottom:6px;">
-      <div class="flex-between" style="font-weight:600; margin-bottom:2px;">
-        <span style="color:#fff;">${l.date}</span>
-        <span style="color:var(--accent);">${l.weight}kg · W: ${l.waist}in</span>
-      </div>
-      <div style="color:var(--txt-dim)">Steps: ${(l.steps||0).toLocaleString()} · Sleep: ${l.sleep}h · Hunger: ${l.hunger}/10</div>
-    </div>
-  `).join('');
-}
-
-function saveCheckin() {
-  const dateStr = new Date().toLocaleDateString('en-CA');
-  const wt = document.getElementById('f-weight').value;
-  const waist = document.getElementById('f-waist').value;
-  const steps = document.getElementById('f-steps').value;
-  const sleep = document.getElementById('f-sleep').value;
-  const hunger = document.getElementById('f-hunger').value;
-  const notes = document.getElementById('f-notes').value.trim();
-  
-  if(!wt || !waist) {
-    toast('❌ Target parameters Weight & Waist metrics are mandatory requirements.', 'r');
-    return;
-  }
+  if(!email || !pass) return toast('Please enter all fields', 'r');
   
   const d = gDB();
-  if(!d.checkins[uE]) d.checkins[uE] = {};
+  const u = d.users[email];
   
-  d.checkins[uE][dateStr] = {
-    date: dateStr,
-    weight: parseFloat(wt),
+  if(!u || u.pass !== pass) return toast('Invalid email or password', 'r');
+  
+  cUser = u;
+  localStorage.setItem('shredlane_session', email);
+  onLoginSuccess();
+  toast('Welcome back!', 'g');
+}
+
+function handleRegister() {
+  const name = document.getElementById('reg-name').value.trim();
+  const email = document.getElementById('reg-email').value.trim().toLowerCase();
+  const pass = document.getElementById('reg-pass').value;
+  
+  if(!name || !email || !pass) return toast('Please enter all fields', 'r');
+  if(pass.length < 6) return toast('Password must be at least 6 characters', 'r');
+  
+  const d = gDB();
+  if(d.users[email]) return toast('Email already registered', 'r');
+  
+  d.users[email] = {
+    name, email, pass,
+    status: email === ADMIN_EMAIL ? 'approved' : 'pending',
+    isAdmin: email === ADMIN_EMAIL
+  };
+  d.checkins[email] = [];
+  
+  sDB(d);
+  cUser = d.users[email];
+  localStorage.setItem('shredlane_session', email);
+  onLoginSuccess();
+  toast('Account created!', 'g');
+}
+
+function onLoginSuccess() {
+  document.getElementById('page-auth').classList.remove('active');
+  document.getElementById('main-nav').style.display = 'flex';
+  document.getElementById('user-greeting').innerText = `Hey, ${cUser.name.split(' ')[0]}!`;
+  
+  if(cUser.isAdmin) {
+    document.getElementById('nav-admin-btn').style.display = 'flex';
+  } else {
+    document.getElementById('nav-admin-btn').style.display = 'none';
+  }
+  switchPage('home');
+}
+
+function handleLogout() {
+  cUser = null;
+  localStorage.removeItem('shredlane_session');
+  document.getElementById('main-nav').style.display = 'none';
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.getElementById('page-auth').classList.add('active');
+  document.getElementById('login-email').value = '';
+  document.getElementById('login-pass').value = '';
+}
+
+// ═══════════════════════════════════════
+// CORE BUSINESS LOGIC (CHECK-INS)
+// ═══════════════════════════════════════
+function submitCheckin() {
+  const date = document.getElementById('log-date').value;
+  const weight = document.getElementById('log-weight').value;
+  const waist = document.getElementById('log-waist').value;
+  const steps = document.getElementById('log-steps').value;
+  const sleep = document.getElementById('log-sleep').value;
+  const hunger = document.getElementById('log-hunger').value;
+  const notes = document.getElementById('log-notes').value.trim();
+  
+  if(!date || !weight || !waist) return toast('Date, Weight, and Waist are mandatory', 'r');
+  
+  const d = gDB();
+  if(!d.checkins[cUser.email]) d.checkins[cUser.email] = [];
+  
+  // Upsert structure
+  const existingIdx = d.checkins[cUser.email].findIndex(c => c.date === date);
+  const logData = {
+    date,
+    weight: parseFloat(weight),
     waist: parseFloat(waist),
     steps: steps ? parseInt(steps) : null,
     sleep: sleep ? parseFloat(sleep) : null,
-    hunger: hunger ? parseInt(hunger) : null,
+    hunger: parseInt(hunger),
     notes: notes || null
   };
   
+  if(existingIdx > -1) {
+    d.checkins[cUser.email][existingIdx] = logData;
+  } else {
+    d.checkins[cUser.email].push(logData);
+  }
+  
+  // Sort descending dates
+  d.checkins[cUser.email].sort((a,b) => new Date(b.date) - new Date(a.date));
   sDB(d);
-  toast('💾 Daily matrix payload written successfully to secure cluster tracking database.', 'g');
-  switchTab('dash');
+  
+  toast('💪 Daily data logged safely!', 'g');
+  
+  // Clear non-static inputs
+  document.getElementById('log-notes').value = '';
+  switchPage('home');
 }
 
 // ═══════════════════════════════════════
-// METRIC ARCHITECTURE DASHBOARD COMPUTATION VIEWS
+// RENDERING MODULES
 // ═══════════════════════════════════════
-function renderDashboard() {
-  const logs = getLocalLogs();
-  
-  if(!logs.length) {
-    document.getElementById('stat-weight').innerText = '--';
-    document.getElementById('stat-w-diff').innerText = '--';
-    document.getElementById('stat-w-diff').className = 'stat-val';
-    document.getElementById('stat-waist').innerText = '--';
-    document.getElementById('stat-steps').innerText = '--';
-    document.getElementById('stat-sleep').innerText = '--';
-    document.getElementById('stat-hunger').innerText = '--';
-    renderEmptyChart();
-    renderStreakCalendar([], 0);
-    return;
-  }
-  
-  const latest = logs[0];
-  document.getElementById('stat-weight').innerHTML = `${latest.weight}<span class="unit">kg</span>`;
-  document.getElementById('stat-waist').innerHTML = `${latest.waist}<span class="unit">in</span>`;
-  
-  // Calculate delta variances matching 7 day intervals
-  let diffText = '--';
-  let diffClass = 'stat-val';
-  if(logs.length > 1) {
-    // Find closest match historical data offset matching roughly 7 timestamps back
-    const targetDate = new Date(new Date(latest.date).getTime() - 7*24*60*60*1000).toLocaleDateString('en-CA');
-    let historicalLog = logs.find(l => l.date <= targetDate);
-    if(!historicalLog) historicalLog = logs[logs.length - 1]; // dynamic fallback index match algorithm logic tracking loop boundary
-    
-    const delta = latest.weight - historicalLog.weight;
-    diffText = (delta >= 0 ? '+' : '') + delta.toFixed(2) + 'kg';
-    diffClass = 'stat-val ' + (delta <= 0 ? 'grn' : 'red');
-  }
-  document.getElementById('stat-w-diff').innerText = diffText;
-  document.getElementById('stat-w-diff').className = diffClass;
-  
-  // Compute rolling aggregate math averages limits matching total structural elements loaded up to index point 7
-  const sliceSize = Math.min(logs.length, 7);
-  const r7 = logs.slice(0, sliceSize);
-  
-  let tSteps = 0, cSteps = 0, tSleep = 0, cSleep = 0, tHunger = 0, cHunger = 0;
-  r7.forEach(l => {
-    if(l.steps !== null) { tSteps += l.steps; cSteps++; }
-    if(l.sleep !== null) { tSleep += l.sleep; cSleep++; }
-    if(l.hunger !== null) { tHunger += l.hunger; cHunger++; }
-  });
-  
-  document.getElementById('stat-steps').innerText = cSteps ? Math.round(tSteps/cSteps).toLocaleString() : '--';
-  document.getElementById('stat-sleep').innerHTML = cSleep ? (tSleep/cSleep).toFixed(1) + '<span class="unit">h</span>' : '--';
-  document.getElementById('stat-hunger').innerText = cHunger ? (tHunger/cHunger).toFixed(1) : '--';
-  
-  // Fire data graphing pipeline layer systems updates
-  renderTrendChart(logs.slice(0, 14).reverse());
-  
-  // Compute current linear chronological consecutive tracking consistency streak patterns
-  const streak = computeStreak(logs);
-  document.getElementById('streak-count-val').innerText = streak;
-  renderStreakCalendar(logs, streak);
-}
-
-function computeStreak(sortedLogs) {
-  if(!sortedLogs.length) return 0;
-  let streak = 0;
-  let currentTarget = new Date();
-  
-  // Normalize date conversion timestamp instances securely across browser runtime architectures
-  const checkDateStr = (d) => d.toLocaleDateString('en-CA');
-  
-  // Check if today or yesterday has logs to qualify active state conditions
-  const todayStr = checkDateStr(currentTarget);
-  const yesterdayStr = checkDateStr(new Date(currentTarget.getTime() - 24*60*60*1000));
-  
-  const hasToday = sortedLogs.some(l => l.date === todayStr);
-  const hasYesterday = sortedLogs.some(l => l.date === yesterdayStr);
-  
-  if(!hasToday && !hasYesterday) return 0;
-  
-  if(hasYesterday && !hasToday) {
-    currentTarget = new Date(currentTarget.getTime() - 24*60*60*1000);
-  }
-  
-  while(true) {
-    const sStr = checkDateStr(currentTarget);
-    if(sortedLogs.some(l => l.date === sStr)) {
-      streak++;
-      currentTarget.setTime(currentTarget.getTime() - 24*60*60*1000);
-    } else {
-      break;
-    }
-  }
-  return streak;
-}
-
-function renderEmptyChart() {
-  document.getElementById('trend-svg').innerHTML = `
-    <text x="50%" y="50%" fill="#555" font-size="12" text-anchor="middle" dominant-baseline="middle">Awaiting structural data tracking inputs logic matrix generation</text>
-  `;
-  document.getElementById('chart-range-label').innerText = '';
-}
-
-function renderTrendChart(chartLogs) {
-  if(chartLogs.length < 2) {
-    renderEmptyChart();
-    return;
-  }
-  
-  document.getElementById('chart-range-label').innerText = `${chartLogs[0].date} to ${chartLogs[chartLogs.length-1].date}`;
-  
-  const svg = document.getElementById('trend-svg');
-  const w = svg.clientWidth || 300;
-  const h = 160;
-  const padding = 25;
-  
-  const weights = chartLogs.map(l => l.weight);
-  const minW = Math.min(...weights) - 0.5;
-  const maxW = Math.max(...weights) + 0.5;
-  const rangeW = maxW - minW || 1;
-  
-  // SVG generation builders
-  let points = [];
-  let pointsHtml = '';
-  
-  const getX = (idx) => padding + (idx / (chartLogs.length - 1)) * (w - padding * 2);
-  const getY = (weight) => h - padding - ((weight - minW) / rangeW) * (h - padding * 2);
-  
-  chartLogs.forEach((l, i) => {
-    const x = getX(i);
-    const y = getY(l.weight);
-    points.push(`${x},${y}`);
-    pointsHtml += `
-      <circle cx="${x}" cy="${y}" r="3.5" fill="var(--accent)" />
-      <text x="${x}" y="${y - 8}" fill="#fff" font-size="9" font-weight="600" text-anchor="middle">${l.weight}</text>
-    `;
-  });
-  
-  // Path line generator arrays
-  const linePath = `<polyline points="${points.join(' ')}" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />`;
-  
-  // Draw basic grid boundaries parameters labels
-  const gridHtml = `
-    <line x1="${padding}" y1="${padding}" x2="${w-padding}" y2="${padding}" stroke="#1a1a1a" stroke-dasharray="2" />
-    <line x1="${padding}" y1="${h-padding}" x2="${w-padding}" y2="${h-padding}" stroke="#222" />
-    <text x="${padding-5}" y="${padding}" fill="var(--txt-dim)" font-size="9" text-anchor="end" dominant-baseline="middle">${maxW.toFixed(1)}</text>
-    <text x="${padding-5}" y="${h-padding}" fill="var(--txt-dim)" font-size="9" text-anchor="end" dominant-baseline="middle">${minW.toFixed(1)}</text>
-    <text x="${padding}" y="${h-8}" fill="var(--gry2)" font-size="9" text-anchor="start">${chartLogs[0].date.slice(5)}</text>
-    <text x="${w-padding}" y="${h-8}" fill="var(--gry2)" font-size="9" text-anchor="end">${chartLogs[chartLogs.length-1].date.slice(5)}</text>
-  `;
-  
-  svg.innerHTML = gridHtml + linePath + pointsHtml;
-}
-
-function renderStreakCalendar(logs, currentStreak) {
-  const grid = document.getElementById('streak-grid-box');
-  grid.innerHTML = '';
-  
-  // Render visual tracking grid array matrix representing final chronological 14 day intervals block sequence arrays
-  const today = new Date();
-  for(let i = 13; i >= 0; i--) {
-    const d = new Date(today.getTime() - i*24*60*60*1000);
-    const dStr = d.toLocaleDateString('en-CA');
-    const logMatch = logs.find(l => l.date === dStr);
-    
-    const dayEl = document.createElement('div');
-    dayEl.className = 'streak-day' + (logMatch ? ' active' : '');
-    dayEl.innerHTML = `<div>${d.getDate()}</div><div style="font-size:7px;color:var(--txt-dim);margin-top:2px;">${d.toLocaleDateString('en-US',{weekday:'short'}).slice(0,1)}</div>`;
-    
-    if(logMatch && logMatch.steps && logMatch.steps >= 10000) {
-      const dot = document.createElement('div');
-      dot.className = 'dot';
-      dayEl.appendChild(dot);
-    }
-    grid.appendChild(dayEl);
-  }
-}
-
-// ═══════════════════════════════════════
-// DISTRIBUTED COMMUNITY CLUSTER FEED HOOKS
-// ═══════════════════════════════════════
-function renderCommunity() {
+function renderHome() {
   const d = gDB();
-  const feedBox = document.getElementById('comm-feed-box');
-  const avatarBar = document.getElementById('comm-avatars-bar');
+  const uObj = d.users[cUser.email];
   
-  avatarBar.innerHTML = '';
-  feedBox.innerHTML = '';
+  // Dynamic header updates
+  document.getElementById('user-status-badge').innerText = uObj.status;
+  document.getElementById('user-status-badge').className = `badge ${uObj.status}`;
+  document.getElementById('pending-alert').style.display = uObj.status === 'pending' ? 'block' : 'none';
   
-  let mergedTimeline = [];
-  let userCount = 0;
+  // Performance metrics computing block
+  const logs = d.checkins[cUser.email] || [];
+  if(logs.length > 0) {
+    const latest = logs[0];
+    document.getElementById('stat-wt').innerText = latest.weight ? latest.weight + 'kg' : '-';
+    document.getElementById('stat-waist').innerText = latest.waist ? latest.waist + 'in' : '-';
+    document.getElementById('stat-steps').innerText = latest.steps ? latest.steps.toLocaleString() : '-';
+  } else {
+    document.getElementById('stat-wt').innerText = '-';
+    document.getElementById('stat-waist').innerText = '-';
+    document.getElementById('stat-steps').innerText = '-';
+  }
   
-  for(let email in d.users) {
-    if(d.users[email].status !== 'approved') continue;
-    userCount++;
-    
-    const latestLog = fetchUserLatest(email);
-    
-    // Avatar elements builder pipeline layers injection loop array sequence
-    const av = document.createElement('div');
-    av.style.display = 'inline-block';
-    av.style.textAlign = 'center';
-    av.style.marginRight = '12px';
-    av.innerHTML = `
-      <div style="width:36px; height:36px; line-height:36px; border-radius:50%; background:${email===uE?'var(--accent)':'#252529'}; color:#fff; font-weight:700; font-size:14px; border: 1px solid #444; margin: 0 auto 4px;">
-        ${d.users[email].name.slice(0,2).toUpperCase()}
-      </div>
-      <div style="font-size:10px; color:var(--txt-dim); max-width:50px; overflow:hidden; text-overflow:ellipsis;">${d.users[email].name.split(' ')[0]}</div>
-    `;
-    avatarBar.appendChild(av);
-    
-    // Process matching data arrays for operational feed timeline integration mapping
-    const uLogs = d.checkins[email] || {};
-    for(let date in uLogs) {
-      mergedTimeline.push({
-        email: email,
-        userName: d.users[email].name,
-        log: uLogs[date]
+  // Community Stream compiling block
+  const feedCont = document.getElementById('community-feed');
+  feedCont.innerHTML = '';
+  
+  // Aggregate feed arrays
+  let masterFeed = [];
+  Object.keys(d.checkins).forEach(email => {
+    if(d.users[email] && d.users[email].status === 'approved') {
+      d.checkins[email].forEach(log => {
+        masterFeed.push({ uName: d.users[email].name, ...log });
       });
     }
-  }
+  });
   
-  if(!mergedTimeline.length) {
-    feedBox.innerHTML = `<div class="card" style="text-align:center; color:var(--txt-dim); padding:20px;">Mesh pipeline online. Awaiting data package streams from cluster node targets.</div>`;
+  masterFeed.sort((a,b) => new Date(b.date) - new Date(a.date));
+  
+  if(masterFeed.length === 0) {
+    feedCont.innerHTML = `<p class="text-dim text-center" style="padding:20px 0;">No logs in the pipeline yet...</p>`;
     return;
   }
   
-  // Sort reverse chronologically
-  mergedTimeline.sort((a,b) => b.log.date.localeCompare(a.log.date));
-  
-  // Slice to cap timeline visualization optimization bounds to limit memory consumption thresholds
-  const displayFeed = mergedTimeline.slice(0, 25);
-  
-  feedBox.innerHTML = displayFeed.map(item => {
-    const l = item.log;
-    const isMe = item.email === uE;
-    return `
-      <div class="card feed-item" style="border-left-color: ${isMe?'var(--accent)':'#444'}">
-        <div class="flex-between">
-          <span class="feed-user">${item.userName} <span style="font-weight:normal; font-size:11px; color:var(--txt-dim);">(${item.email.split('@')[0]})</span></span>
-          <span class="feed-time">${l.date}</span>
+  // Stream slicing out first 15 entries
+  masterFeed.slice(0,15).forEach(f => {
+    const row = document.createElement('div');
+    row.className = 'checkin-row';
+    row.innerHTML = `
+      <div style="flex:1; padding-right:8px;">
+        <span style="font-weight:600; color:#fff;">${f.uName}</span>
+        <span style="font-size:11px; color:var(--txt-dim); margin-left:6px;">${f.date}</span>
+        <div style="margin-top:4px; font-size:12px; color:#ddd;">
+          Wt: <strong>${f.weight}kg</strong> · Waist: <strong>${f.waist}in</strong> 
+          ${f.steps ? `· Steps: <strong>${f.steps.toLocaleString()}</strong>` : ''}
+          ${f.sleep ? `· Sleep: <strong>${f.sleep}h</strong>` : ''}
+          · Hunger: <strong>${f.hunger}/10</strong>
         </div>
-        <div class="feed-stats">
-          Weight: <strong style="color:#fff;">${l.weight}kg</strong> · Waist: <strong style="color:#fff;">${l.waist}in</strong>
-        </div>
-        <div style="font-size:12px; color:var(--txt-dim); margin-top:4px;">
-          Steps: ${(l.steps||0).toLocaleString()} · Sleep: ${l.sleep||'--'}h · Hunger: ${l.hunger||'--'}/10
-        </div>
-        ${l.notes ? `<div class="log-notes">"${l.notes}"</div>` : ''}
+        ${f.notes ? `<div style="margin-top:4px; font-size:12px; color:var(--txt-dim); font-style:italic;">"${f.notes}"</div>` : ''}
       </div>
     `;
-  }).join('');
+    feedCont.appendChild(row);
+  });
 }
 
-// ═══════════════════════════════════════
-// COMPREHENSIVE COMPILATION HISTORICAL ARCHIVE
-// ═══════════════════════════════════════
 function renderHistory() {
-  const logs = getLocalLogs();
-  const box = document.getElementById('full-history-list');
+  const d = gDB();
+  const logs = d.checkins[cUser.email] || [];
+  const listCont = document.getElementById('history-list');
+  listCont.innerHTML = '';
   
-  if(!logs.length) {
-    box.innerHTML = `<div class="card" style="text-align:center; color:var(--txt-dim); padding:20px;">History system empty. Compile metric inputs inside entry engine terminal panels.</div>`;
+  if(logs.length === 0) {
+    listCont.innerHTML = `<p class="text-dim text-center" style="padding:20px 0;">No check-ins generated yet.</p>`;
     return;
   }
   
-  box.innerHTML = logs.map((c, idx) => {
-    // Dynamic sliding delta computation layer boundaries matching indexing positions securely inside bounds arrays
-    let wDiff = null, waistDiff = null;
+  logs.forEach((c, idx) => {
+    const div = document.createElement('div');
+    div.className = 'checkin-row';
+    
+    // Trend metrics evaluations delta calculators
+    let wDiff = null, waDiff = null;
     if(idx < logs.length - 1) {
       const prev = logs[idx + 1];
-      wDiff = (c.weight - prev.weight).toFixed(2);
-      waistDiff = (c.waist - prev.waist).toFixed(2);
+      wDiff = (c.weight - prev.weight).toFixed(1);
+      waDiff = (c.waist - prev.waist).toFixed(1);
     }
     
-    return `
-      <div class="card mc-item">
-        <div class="mc-header">
-          <span style="font-weight:700; color:#fff; font-size:14px;">📅 ${c.date}</span>
-          <div>
-            <button class="btn btn-sm btn-danger" style="padding:2px 6px; font-size:10px;" onclick="deleteLogEntry('${c.date}')">Purge</button>
-          </div>
+    div.innerHTML = `
+      <div style="flex:1;">
+        <div class="flex-between">
+          <strong style="color:#fff; font-size:14px;">${c.date}</strong>
+          <span style="font-size:12px; color:var(--txt-dim)">Hunger: ${c.hunger}/10</span>
         </div>
-        <div class="log-grid">
-          <div>Wt: <strong>${c.weight}kg</strong> ${wDiff!==null?`<span style="font-size:10px;color:${parseFloat(wDiff)<=0?'var(--grn)':'var(--red)'}">${parseFloat(wDiff)>0?'+':''}${wDiff}</span>`:''}</div>
-          <div>Waist: <strong>${c.waist}in</strong> ${waistDiff!==null?`<span style="font-size:10px;color:${parseFloat(waistDiff)<=0?'var(--grn)':'var(--red)'}">${parseFloat(waistDiff)>0?'+':''}${waistDiff}</span>`:''}</div>
-          <div>Steps: <strong>${(c.steps||0).toLocaleString()}</strong></div>
-          <div>Sleep: <strong>${c.sleep||'--'}h</strong></div>
-          <div>Hunger: <strong>${c.hunger||'--'}/10</strong></div>
+        <div style="margin-top:4px; font-size:13px;">
+          Weight: <strong>${c.weight}kg</strong> 
+          ${wDiff !== null ? `<span style="font-size:11px; color:${parseFloat(wDiff)<=0?'var(--grn)':'var(--red)'}">(${parseFloat(wDiff)>0?'+':''}${wDiff})</span>` : ''}
+          · Waist: <strong>${c.waist}in</strong>
+          ${waDiff !== null ? `<span style="font-size:11px; color:${parseFloat(waDiff)<=0?'var(--grn)':'var(--red)'}">(${parseFloat(waDiff)>0?'+':''}${waDiff})</span>` : ''}
         </div>
-        ${c.notes?`<div class="log-notes">"${c.notes}"</div>`:''}
+        <div style="margin-top:2px; font-size:12px; color:var(--txt-dim);">
+          Steps: ${(c.steps || 0).toLocaleString()} · Sleep: ${c.sleep || 0}h
+        </div>
+        ${c.notes ? `<div style="margin-top:4px; font-size:12px; color:#aaa; background:#000; padding:4px 8px; border-radius:4px;">${c.notes}</div>` : ''}
       </div>
     `;
-  }).join('');
+    listCont.appendChild(div);
+  });
 }
 
-function deleteLogEntry(dateStr) {
-  if(!confirm(`Confirm destruction authorization command on metrics dataset matching key timestamp: ${dateStr}?`)) return;
-  const d = gDB();
-  if(d.checkins[uE] && d.checkins[uE][dateStr]) {
-    delete d.checkins[uE][dateStr];
-    sDB(d);
-    toast(`🔥 Payload entry ${dateStr} dropped from data structure array schemas.`, 'r');
-    renderHistory();
-  }
-}
-
-// ═══════════════════════════════════════
-// ADMINISTRATIVE COMPILATION CONTROL MATRICES
-// ═══════════════════════════════════════
 function renderAdmin() {
-  if(uRole !== 'admin') return;
   const d = gDB();
-  const container = document.getElementById('admin-applicants-list');
-  container.innerHTML = '';
+  const rosterCont = document.getElementById('admin-roster');
+  rosterCont.innerHTML = '';
   
-  let pendingUsers = [];
-  let activeUsers = [];
-  
-  for(let email in d.users) {
-    if(d.users[email].status === 'pending') pendingUsers.push(d.users[email]);
-    else if(email !== uE) activeUsers.push(d.users[email]);
-  }
-  
-  let html = '<h3>Verification Requests Queued</h3>';
-  if(!pendingUsers.length) {
-    html += `<div style="font-size:12px; color:var(--txt-dim); padding:10px 0;">Registry queues empty. Operational structural balances equalized.</div>`;
-  } else {
-    pendingUsers.forEach(u => {
-      html += `
-        <div class="log-item flex-between" style="padding:8px; margin-bottom:6px; background:#221b10; border-color:#443311;">
-          <div>
-            <div style="font-weight:600; color:#fff;">${u.name}</div>
-            <div style="font-size:11px; color:var(--txt-dim);">${u.email}</div>
-          </div>
-          <div style="display:flex; gap:6px;">
-            <button class="btn btn-sm btn-primary" onclick="approveUser('${u.email}')">Pass</button>
-            <button class="btn btn-sm btn-danger" onclick="rejectUser('${u.email}')">Drop</button>
-          </div>
+  Object.keys(d.users).forEach(email => {
+    const u = d.users[email];
+    if(u.isAdmin) return; // skip self
+    
+    const uLogs = d.checkins[email] || [];
+    const last = uLogs[0];
+    
+    let wDiff = null, waDiff = null;
+    if(uLogs.length > 1) {
+      wDiff = (last.weight - uLogs[1].weight).toFixed(1);
+      waDiff = (last.waist - uLogs[1].waist).toFixed(1);
+    }
+    
+    const card = document.createElement('div');
+    card.className = 'admin-user-card';
+    card.innerHTML = `
+      <div class="admin-user-header">
+        <div>
+          <strong style="color:#fff; font-size:15px;">${u.name}</strong><br>
+          <span style="font-size:11px; color:var(--txt-dim)">${u.email}</span>
         </div>
-      `;
-    });
-  }
-  
-  html += '<h3 style="margin-top:15px;">Active Secondary Mesh Node Links</h3>';
-  if(!activeUsers.length) {
-    html += `<div style="font-size:12px; color:var(--txt-dim); padding:10px 0;">No active subordinate nodes paired inside system arrays.</div>`;
-  } else {
-    activeUsers.forEach(u => {
-      const last = fetchUserLatest(u.email);
-      let wDiff = null, waDiff = null;
-      if(last) {
-        const uLogs = d.checkins[u.email] || {};
-        const dates = Object.keys(uLogs).sort();
-        if(dates.length > 1) {
-          const prev = uLogs[dates[dates.length-2]];
-          wDiff = (last.weight - prev.weight).toFixed(2);
-          waDiff = (last.waist - prev.waist).toFixed(2);
-        }
-      }
-      
-      html += `
-        <div class="log-item" style="padding:8px; margin-bottom:6px;">
-          <div class="flex-between">
-            <div>
-              <span style="font-weight:600; color:#fff;">${u.name}</span> 
-              <span style="font-size:10px; color:var(--accent);">[${u.role||'user'}]</span>
-            </div>
-            <button class="btn btn-sm btn-danger" style="padding:1px 4px; font-size:10px;" onclick="rejectUser('${u.email}')">Deauth</button>
-          </div>
-          <div style="font-size:11px; color:var(--txt-dim); margin-top:2px;">Cluster Identifier: ${u.email}</div>
-          ${last ? `<div class="mc-last">
-            Last: ${last.date} · Wt: <strong style="color:${wDiff&&parseFloat(wDiff)<0?'var(--grn)':'var(--red)'}">${last.weight}kg${wDiff!==null?' ('+(parseFloat(wDiff)>0?'+':'')+wDiff+')':''}</strong> · Waist: <strong style="color:${waDiff&&parseFloat(waDiff)<0?'var(--grn)':'var(--red)'}">${last.waist}in${waDiff!==null?' ('+(parseFloat(waDiff)>0?'+':'')+waDiff+')':''}</strong> · Steps: ${(last.steps||0).toLocaleString()} · Sleep: ${last.sleep}h · Hunger: ${last.hunger}/10
-            ${last.notes?`<br><em style="color:var(--gry2);font-style:italic\">\"${last.notes}\"</em>`:''}
-          </div>`:''}
-        </div>`;
-    });
-  }
-  
-  container.innerHTML = html;
+        <div>
+          ${u.status === 'pending' ? 
+            `<button class="btn" style="padding:4px 8px; font-size:11px; width:auto; display:inline-block;" onclick="approveUser('${u.email}')">Approve</button>` : 
+            `<span class="badge approved">Active</span>`
+          }
+          <button class="btn btn-danger" style="padding:4px 8px; font-size:11px; width:auto; display:inline-block; margin-left:4px;" onclick="rejectUser('${u.email}')">Remove</button>
+        </div>
+      </div>
+      ${last ? `<div class="mc-last">
+        Last: ${last.date} · Wt: <strong style="color:${wDiff&&parseFloat(wDiff)<0?'var(--grn)':'var(--red)'}">${last.weight}kg${wDiff!==null?' ('+(parseFloat(wDiff)>0?'+':'')+wDiff+')':''}</strong> · Waist: <strong style="color:${waDiff&&parseFloat(waDiff)<0?'var(--grn)':'var(--red)'}">${last.waist}in${waDiff!==null?' ('+(parseFloat(waDiff)>0?'+':'')+waDiff+')':''}</strong> · Steps: ${(last.steps||0).toLocaleString()} · Sleep: ${last.sleep}h · Hunger: ${last.hunger}/10
+        ${last.notes?`<br><em style="color:var(--gry2);font-style:italic\">\"${last.notes}\"</em>`:''}
+      </div>`:''}
+    </div>`;
+    rosterCont.appendChild(card);
+  });
 }
 
 function approveUser(email){
-  const d = gDB();
-  if(d.users[email]){d.users[email].status='approved';sDB(d);}
-  toast('✅ '+email+' approved','g');
+  const d=gDB();
+  if(d.users[email]){d.users[email].status='approved';sDB(d);}\n  toast('✅ '+email+' approved','g');
   renderAdmin();
 }
 
 function rejectUser(email){
   if(!confirm('Remove '+email+' from the community?'))return;
-  const d = gDB();
+  const d=gDB();
   delete d.users[email];
   delete d.checkins[email];
   sDB(d);
@@ -1105,124 +602,53 @@ function rejectUser(email){
 }
 
 // ═══════════════════════════════════════
-// TOAST NOTIFICATION LAYER
+// TOAST & DATA EXPORTER
 // ═══════════════════════════════════════
-let toastTimeout;
-function toast(msg, type) {
-  const t = document.getElementById('toast');
-  t.innerText = msg;
-  
-  // Dynamic color palette contextual updates matching system alerts standards
-  if(type === 'r') t.style.borderColor = 'var(--red)';
-  else if(type === 'g') t.style.borderColor = 'var(--grn)';
-  else t.style.borderColor = 'var(--border)';
-  
-  t.classList.add('show');
-  clearTimeout(toastTimeout);
-  toastTimeout = setTimeout(() => { t.classList.remove('show'); }, 3000);
-}
-
-function saveProfileName() {
-  const newName = document.getElementById('pref-name').value.trim();
-  if(!newName) return;
-  const d = gDB();
-  if(d.users[uE]) {
-    d.users[uE].name = newName;
-    sDB(d);
-    toast('👤 Identity parameters mutated successfully across runtime blocks.', 'g');
-    evaluateUserStatusAndRender();
-  }
-}
-
-// ═══════════════════════════════════════
-// EXPORT PIPELINES (JSON & jsPDF PORTABILITY)
-// ═══════════════════════════════════════
-function exportJSON() {
-  const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(gDB(), null, 2));
-  const dlAnchor = document.createElement('a');
-  dlAnchor.setAttribute("href", dataStr);
-  dlAnchor.setAttribute("download", `shredlane_backup_${new Date().toLocaleDateString('en-CA')}.json`);
-  document.body.appendChild(dlAnchor);
-  dlAnchor.click();
-  dlAnchor.remove();
-}
-
-function importJSON(event) {
-  const file = event.target.files[0];
-  if(!file) return;
-  const reader = new FileReader();
-  reader.onload = function(e) {
-    try {
-      const parsed = JSON.parse(e.target.result);
-      if(parsed.users && parsed.checkins) {
-        localStorage.setItem('shredlane_db_v1', JSON.stringify(parsed));
-        toast('📥 Database restore successful.', 'g');
-        syncDB();
-        evaluateUserStatusAndRender();
-      } else {
-        toast('❌ Failure: JSON architecture is missing signature mapping schemas.', 'r');
-      }
-    } catch(err) {
-      toast('❌ Failure processing cryptographic JSON package streams.', 'r');
-    }
-  };
-  reader.readAsText(file);
-}
-
-function exportPDF() {
-  const logs = getLocalLogs();
-  if(!logs.length) { toast('❌ Document printing pipeline contains empty array logs.', 'r'); return; }
-  
-  toast('⚙️ Compiling print array matrices...', 'g');
+function exportPDF(){
   const { jsPDF } = window.jspdf;
   const doc = new jsPDF();
+  const d = gDB();
+  const logs = d.checkins[cUser.email] || [];
   
-  // Document context header configurations definitions
-  doc.setFillColor(6,6,6); doc.rect(0,0,210,40,'F');
-  doc.setTextColor(255,255,255); doc.setFontSize(22); doc.setFont("Helvetica","Bold");
-  doc.text("SHREDLANE LOG METRICS ARCHIVE", 14, 18);
-  doc.setFontSize(9); doc.setFont("Helvetica","Normal"); doc.setTextColor(150,150,150);
-  doc.text(`Identifier Cluster Ref Token: ${uE} · Computed Extraction: ${new Date().toLocaleString()}`, 14, 26);
-  doc.setLineWidth(0.5); doc.setDrawColor(255,74,74); doc.line(14,32,196,32);
+  doc.setFont('Helvetica','bold');doc.setFontSize(22);doc.setTextColor(20,20,20);
+  doc.text('SHREDLANE PERFORMANCE AUDIT',14,20);
+  doc.setFont('Helvetica','normal');doc.setFontSize(10);doc.setTextColor(120,120,120);
+  doc.text(`Athlete: ${cUser.name}  |  Generated: ${new Date().toLocaleDateString()}`,14,26);
+  doc.line(14,30,196,30);
 
-  let y = 50;
-  doc.setFontSize(12); doc.setTextColor(20,20,20); doc.setFont("Helvetica","Bold");
-  doc.text("Chronological Historical Logs Dataset Matrix Array Indexing", 14, y);
-  y += 8;
+  let y = 40;
+  if(logs.length === 0){
+    doc.text('No matching data sequences recorded.',14,y);
+  } else {
+    doc.setFont('Helvetica','bold');doc.setFontSize(9);doc.setTextColor(100,100,100);
+    doc.text('Date',14,y);doc.text('Wt(kg)',54,y);doc.text('Waist(in)',78,y);doc.text('Steps',106,y);doc.text('Sleep',130,y);doc.text('Hunger',152,y);doc.text('Notes',176,y);
+    y+=3;doc.line(14,y,196,y);y+=6;doc.setTextColor(20,20,20);doc.setFont('Helvetica','normal');
+    
+    logs.forEach((c, i) => {
+      if(y > 275){
+        doc.addPage();y=20;
+        doc.setFont('Helvetica','bold');doc.setFontSize(9);doc.setTextColor(100,100,100);
+        doc.text('Date',14,y);doc.text('Wt(kg)',54,y);doc.text('Waist(in)',78,y);doc.text('Steps',106,y);doc.text('Sleep',130,y);doc.text('Hunger',152,y);doc.text('Notes',176,y);
+        y+=3;doc.line(14,y,196,y);y+=6;doc.setTextColor(20,20,20);
+      }
+      if(i%2===1){doc.setFillColor(248,248,248);doc.rect(12,y-4,184,6,'F');}
+      doc.text(String(c.date),14,y);
+      doc.text(String(c.weight??''),54,y);
+      doc.text(String(c.waist??''),78,y);
+      doc.text(String((c.steps||0).toLocaleString()),106,y);
+      doc.text(String(c.sleep??''),130,y);
+      doc.text(String(c.hunger??''),152,y);
+      const notes=(c.notes||'').slice(0,28);
+      doc.text(notes,176,y);
+      y+=6;
+    });
+  }
 
-  // Print loop layout data grid mappings definitions definitions configurations
-  doc.setFontSize(9); doc.setDrawColor(220,220,220); doc.setLineWidth(0.2);
-  doc.setTextColor(100,100,100);
-  doc.text('Date',14,y); doc.text('Wt(kg)',54,y); doc.text('Waist(in)',78,y); doc.text('Steps',106,y); doc.text('Sleep',130,y); doc.text('Hunger',152,y); doc.text('Notes',176,y);
-  y += 3; doc.line(14,y,196,y); y += 6;
-
-  doc.setFont("Helvetica","Normal"); doc.setTextColor(20,20,20);
-  
-  logs.forEach((c, i) => {
-    if(y > 275) {
-      doc.addPage(); y = 20;
-      doc.setFont("Helvetica","Bold"); doc.setFontSize(9); doc.setTextColor(100,100,100);
-      doc.text('Date',14,y); doc.text('Wt(kg)',54,y); doc.text('Waist(in)',78,y); doc.text('Steps',106,y); doc.text('Sleep',130,y); doc.text('Hunger',152,y); doc.text('Notes',176,y);
-      y += 3; doc.line(14,y,196,y); y += 6; doc.setTextColor(20,20,20);
-    }
-    if(i % 2 === 1) { doc.setFillColor(248,248,248); doc.rect(12,y-4,184,6,'F'); }
-    doc.text(String(c.date), 14, y);
-    doc.text(String(c.weight??''), 54, y);
-    doc.text(String(c.waist??''), 78, y);
-    doc.text(String((c.steps||0).toLocaleString()), 106, y);
-    doc.text(String(c.sleep??''), 130, y);
-    doc.text(String(c.hunger??''), 152, y);
-    const notes = (c.notes||'').slice(0, 28);
-    doc.text(notes, 176, y);
-    y += 6;
-  });
-
-  // Footer printing settings execution layers logic hook arrays updates
-  doc.setFontSize(8); doc.setTextColor(160,160,160);
-  doc.text("System Array Document Extraction Module Package v1.0.0 · End of Structural Data File.", 14, y+10);
-  
-  doc.save(`shredlane_metrics_profile_report_${new Date().toLocaleDateString('en-CA')}.pdf`);
-  toast('📄 Profile document compile complete. Check output arrays pipeline stream.', 'g');
+  // Footer
+  doc.setFontSize(8);
+  doc.setTextColor(150,150,150);
+  doc.text('Shredlane tracking app — Keep crushing your constraints.', 14, 288);
+  doc.save(`shredlane_audit_${cUser.name.toLowerCase().replace(/\s+/g, '_')}.pdf`);
 }
 </script>
 </body>
