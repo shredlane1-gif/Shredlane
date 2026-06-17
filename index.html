@@ -7,741 +7,186 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <meta name="apple-mobile-web-app-title" content="Shredlane">
-<link rel="apple-touch-icon" href="data:image/png;base64,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","fileMimeType":"text/html","fileName":"index.html","fileNameIsCodeAccessible":true}
 <style>
-:root{
-  --bg:#060606; --card:#111111; --border:#222222;
-  --txt:#e0e0e0; --muted:#888888; --accent:#ff3b30;
-  --accent-rgb:255,59,48; --grn:#34c759; --red:#ff3b30;
-  --blu:#007aff; --gry1:#1e1e1e; --gry2:#636366;
-}
-*{box-sizing:border-box; margin:0; padding:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;}
-body{background:var(--bg); color:var(--txt); padding:16px; padding-bottom:80px;}
-.container{max-width:500px; margin:0 auto;}
-
-header{display:flex; justify-content:space-between; align-items:center; margin-bottom:24px;}
-h1{font-size:24px; font-weight:800; letter-spacing:-0.5px;}
-.version{font-size:10px; color:var(--muted); font-weight:400; margin-left:4px;}
-
-.card{background:var(--card); border:1px solid var(--border); border-radius:12px; padding:16px; margin-bottom:16px;}
-.card-title{font-size:12px; font-weight:700; text-transform:uppercase; color:var(--muted); margin-bottom:12px; letter-spacing:0.5px; display:flex; justify-content:space-between;}
-
-.btn{background:var(--txt); color:var(--bg); border:none; padding:12px 16px; border-radius:8px; font-size:14px; font-weight:600; width:100%; cursor:pointer; display:flex; justify-content:center; align-items:center; gap:8px; transition:opacity 0.1s;}
-.btn:active{opacity:0.8;}
-.btn-sec{background:transparent; color:var(--txt); border:1px solid var(--border);}
-.btn-danger{background:var(--accent); color:#fff;}
-.btn-group{display:grid; grid-template-columns:1fr 1fr; gap:8px;}
-
-.form-group{margin-bottom:12px;}
-.form-group label{display:block; font-size:12px; color:var(--muted); margin-bottom:4px; font-weight:500;}
-.form-row{display:grid; grid-template-columns:1fr 1fr; gap:8px;}
-input,select,textarea{width:100%; background:#000; border:1px solid var(--border); border-radius:6px; padding:10px; color:#fff; font-size:15px;}
-input:focus,select:focus,textarea:focus{outline:none; border-color:var(--gry2);}
-
-.nav-bar{position:fixed; bottom:0; left:0; right:0; background:rgba(17,17,17,0.9); border-top:1px solid var(--border); display:flex; justify-content:space-around; padding:8px 0; backdrop-filter:blur(10px); z-index:100;}
-.nav-item{color:var(--muted); text-decoration:none; display:flex; flex-direction:column; align-items:center; font-size:10px; font-weight:500; cursor:pointer; background:none; border:none; width:20%;}
-.nav-item svg{width:22px; height:22px; margin-bottom:2px; fill:currentColor;}
-.nav-item.active{color:var(--txt);}
-
-.view{display:none;}
-.view.active{display:block;}
-
-.stat-grid{display:grid; grid-template-columns:1fr 1fr; gap:12px;}
-.stat-val{font-size:22px; font-weight:700; margin-top:2px;}
-.stat-lbl{font-size:11px; color:var(--muted);}
-
-.chk-item{display:flex; justify-content:between; align-items:center; border-bottom:1px solid var(--border); padding:10px 0;}
-.chk-item:last-child{border:none;}
-.chk-meta{flex-grow:1;}
-.chk-date{font-size:14px; font-weight:600;}
-.chk-stats{font-size:12px; color:var(--muted); margin-top:2px;}
-.chk-actions{display:flex; gap:12px;}
-.action-btn{background:none; border:none; color:var(--muted); cursor:pointer; padding:4px;}
-.action-btn:active{color:var(--txt);}
-
-#toast{position:fixed; top:20px; left:50%; transform:translateX(-50%); background:#fff; color:#000; padding:12px 24px; border-radius:30px; font-size:14px; font-weight:600; box-shadow:0 4px 12px rgba(0,0,0,0.5); z-index:1000; display:none; opacity:0; transition:opacity 0.2s;}
-
-.admin-u{border-bottom:1px solid var(--border); padding:12px 0;}
-.admin-u:last-child{border:none;}
-.badge{display:inline-block; padding:2px 6px; border-radius:4px; font-size:10px; font-weight:700; text-transform:uppercase;}
-.bg-pnd{background:rgba(255,149,0,0.2); color:#ff9500;}
-.bg-app{background:rgba(52,199,89,0.2); color:#34c759;}
-
-.cal-grid{display:grid; grid-template-columns:repeat(7,1fr); gap:4px; margin-top:8px;}
-.cal-head{text-align:center; font-size:10px; font-weight:600; color:var(--muted); padding:4px 0;}
-.cal-day{aspect-ratio:1; border:1px solid var(--border); border-radius:4px; display:flex; flex-direction:column; justify-content:space-between; padding:4px; font-size:11px; position:relative; background:#000;}
-.cal-day.empty{background:transparent; border:none;}
-.cal-day.has-data{background:rgba(52,199,89,0.1); border-color:rgba(52,199,89,0.3);}
-.cal-dot{width:4px; height:4px; background:var(--grn); border-radius:50%; margin:0 auto 2px auto;}
-
-.info-row{display:flex; justify-content:space-between; margin-bottom:8px; font-size:14px;}
-.info-row:last-child{margin-bottom:0;}
-.info-lbl{color:var(--muted);}
-.info-val{font-weight:500;}
-
-.welcome-box{text-align:center; padding:40px 20px;}
-.welcome-logo{width:72px; height:72px; background:var(--txt); color:var(--bg); border-radius:18px; display:flex; align-items:center; justify-content:center; margin:0 auto 16px auto; font-size:32px; font-weight:800;}
+:root{ --bg:#060606; --card:#111111; --border:#222222; --txt:#e0e0e0; --muted:#888888; --accent:#ff3b30; --accent-rgb:255,59,48; --grn:#34c759; --red:#ff3b30; --blu:#007aff; --gry1:#1e1e1e; --gry2:#636366; } 
+*{box-sizing:border-box; margin:0; padding:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;} 
+body{background:var(--bg); color:var(--txt); padding:16px; padding-bottom:100px;} 
+.container{max-width:500px; margin:0 auto;} 
+header{display:flex; justify-content:space-between; align-items:center; margin-bottom:24px;} 
+h1{font-size:24px; font-weight:800; letter-spacing:-0.5px;} 
+.version{font-size:10px; color:var(--muted); font-weight:400; margin-left:4px;} 
+.card{background:var(--card); border:1px solid var(--border); border-radius:12px; padding:16px; margin-bottom:16px;} 
+.card-title{font-size:12px; font-weight:700; text-transform:uppercase; color:var(--muted); margin-bottom:12px; letter-spacing:0.5px; display:flex; justify-content:space-between;} 
+.btn{background:var(--txt); color:var(--bg); border:none; padding:12px 16px; border-radius:8px; font-size:14px; font-weight:600; width:100%; cursor:pointer; display:flex; justify-content:center; align-items:center; gap:8px; transition:opacity 0.1s;} 
+.btn:active{opacity:0.8;} 
+.btn-sec{background:transparent; color:var(--txt); border:1px solid var(--border);} 
+.btn-danger{background:var(--accent); color:#fff;} 
+.btn-group{display:grid; grid-template-columns:1fr 1fr; gap:8px;} 
+.form-group{margin-bottom:12px;} 
+.form-group label{display:block; font-size:12px; color:var(--muted); margin-bottom:4px; font-weight:500;} 
+.form-row{display:grid; grid-template-columns:1fr 1fr; gap:8px;} 
+input,select,textarea{width:100%; background:#000; border:1px solid var(--border); border-radius:6px; padding:10px; color:#fff; font-size:15px;} 
+input:focus,select:focus,textarea:focus{outline:none; border-color:var(--gry2);} 
+.nav-bar{position:fixed; bottom:0; left:0; right:0; background:rgba(17,17,17,0.9); border-top:1px solid var(--border); display:flex; justify-content:space-around; padding:8px 0; backdrop-filter:blur(10px); z-index:100;} 
+.nav-item{color:var(--muted); text-decoration:none; display:flex; flex-direction:column; align-items:center; font-size:10px; font-weight:500; cursor:pointer; background:none; border:none; width:20%;} 
+.nav-item svg{width:22px; height:22px; margin-bottom:2px; fill:currentColor;} 
+.nav-item.active{color:var(--txt);} 
+.view{display:none;} .view.active{display:block;} 
+.stat-grid{display:grid; grid-template-columns:1fr 1fr; gap:12px;} 
+.stat-val{font-size:22px; font-weight:700; margin-top:2px;} 
+.stat-lbl{font-size:11px; color:var(--muted);} 
+.chk-item{display:flex; justify-content:between; align-items:center; border-bottom:1px solid var(--border); padding:10px 0;} 
+.chk-item:last-child{border:none;} 
+.chk-meta{flex-grow:1;} 
+.chk-date{font-size:14px; font-weight:600;} 
+.chk-stats{font-size:12px; color:var(--muted); margin-top:2px;} 
+.chk-actions{display:flex; gap:12px;} 
+.action-btn{background:none; border:none; color:var(--muted); cursor:pointer; padding:4px;} 
+.action-btn:active{color:var(--txt);} 
+.progress-container{width:100%; height:8px; background:var(--border); border-radius:4px; margin:8px 0;} 
+.progress-bar{height:100%; background:var(--grn); border-radius:4px; width:0%; transition:width 0.3s;}
 </style>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 </head>
 <body>
 
 <div class="container">
-  <div id="toast"></div>
-
-  <div id="view-auth" class="view active">
-    <div class="welcome-box">
-      <div class="welcome-logo">S</div>
-      <h1 style="margin-bottom:8px;">Shredlane</h1>
-      <p style="color:var(--muted); font-size:14px; margin-bottom:32px;">Client Portal & Progress Ledger</p>
-      
-      <div class="card" style="text-align:left;">
-        <div class="card-title">Identify Content</div>
-        <div class="form-group">
-          <label>Email Address</label>
-          <input type="email" id="auth-email" placeholder="coach@shredlane.com or client@domain.com">
-        </div>
-        <button class="btn" onclick="handleAuth()">Continue</button>
-      </div>
-    </div>
-  </div>
-
-  <div id="view-dash" class="view">
     <header>
-      <div>
-        <h1 id="dash-welcome">Dashboard</h1>
-        <p style="font-size:12px; color:var(--muted);" id="dash-role"></p>
-      </div>
-      <button class="btn btn-sec" style="width:auto; padding:6px 12px; font-size:12px;" onclick="logout()">Logout</button>
+        <h1>Shredlane <span class="version">v2.0</span></h1>
     </header>
 
-    <div id="client-summary" style="display:none;">
-      <div class="card">
-        <div class="card-title">Current Phase Metrics</div>
-        <div class="stat-grid">
-          <div style="border-right:1px solid var(--border); padding-right:8px;">
-            <div class="stat-lbl">Starting Weight</div>
-            <div class="stat-val" id="stat-start-wt">--</div>
-          </div>
-          <div style="padding-left:8px;">
-            <div class="stat-lbl">Latest Weight</div>
-            <div class="stat-val" id="stat-latest-wt">--</div>
-          </div>
+    <div id="view-dashboard" class="view active">
+        <div class="card">
+            <div class="card-title">Progress Overview</div>
+            <div id="weight-badge" style="font-size:14px; color:var(--grn); margin-bottom:10px; font-weight:600;"></div>
+            <div class="form-group">
+                <label>Steps Progress (10k Goal)</label>
+                <div class="progress-container"><div id="steps-bar" class="progress-bar"></div></div>
+            </div>
+            <div class="stat-grid">
+                <div><div class="stat-lbl">Latest Weight</div><div id="stat-weight" class="stat-val">-</div></div>
+                <div><div class="stat-lbl">Avg Sleep</div><div id="stat-sleep" class="stat-val">-</div></div>
+            </div>
         </div>
-        <div style="margin-top:12px; padding-top:12px; border-top:1px solid var(--border);" class="stat-grid">
-          <div style="border-right:1px solid var(--border); padding-right:8px;">
-            <div class="stat-lbl">Total Net Change</div>
-            <div class="stat-val" id="stat-w-diff">--</div>
-          </div>
-          <div style="padding-left:8px;">
-            <div class="stat-lbl">Latest Waist</div>
-            <div class="stat-val" id="stat-latest-waist">--</div>
-          </div>
+        <div id="history-list"></div>
+        <div style="margin-top:20px;">
+            <button class="btn btn-sec" onclick="exportCSV()">Export to CSV (Send Data)</button>
         </div>
-      </div>
-
-      <div class="card">
-        <div class="card-title">Compliance History</div>
-        <div class="stat-grid" style="margin-bottom:12px;">
-          <div>
-            <div class="stat-lbl">Total Check-ins</div>
-            <div class="stat-val" id="stat-total-logs">0</div>
-          </div>
-          <div>
-            <div class="stat-lbl">Avg Sleep Duration</div>
-            <div class="stat-val" id="stat-avg-sleep">--</div>
-          </div>
-        </div>
-        <div class="stat-grid">
-          <div>
-            <div class="stat-lbl">Avg Step Metrics</div>
-            <div class="stat-val" id="stat-avg-steps">--</div>
-          </div>
-          <div>
-            <div class="stat-lbl">Avg Hunger Quotient</div>
-            <div class="stat-val" id="stat-avg-hunger">--</div>
-          </div>
-        </div>
-        
-        <div id="calendar-box" style="margin-top:16px; border-top:1px solid var(--border); padding-top:12px;">
-          <div style="display:flex; justify-content:space-between; align-items:center;">
-            <span style="font-size:12px; font-weight:600;" id="cal-month-title">Month</span>
-          </div>
-          <div class="cal-grid" id="cal-container"></div>
-        </div>
-      </div>
     </div>
 
-    <div id="coach-summary" style="display:none;">
-      <div class="card">
-        <div class="card-title">Managed Community Accounts</div>
-        <div id="admin-user-list"></div>
-      </div>
-    </div>
-  </div>
+    <div id="view-entry" class="view">
+        <div class="card">
+            <div class="card-title">Log Today's Metrics</div>
+            <div class="form-group"><label>Body Weight (kg)</label><input type="number" id="in-weight" step="0.1"></div>
+            <div class="form-row">
+                <div class="form-group"><label>Steps</label><input type="number" id="in-steps"></div>
+                <div class="form-group"><label>Sleep (hrs)</label><input type="number" id="in-sleep" step="0.5"></div>
+            </div>
+            
+            <div class="form-group"><label>Habits</label>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-sec" id="hab-protein" onclick="toggleHabit('protein')">Protein Floor: No</button>
+                    <button type="button" class="btn btn-sec" id="hab-workout" onclick="toggleHabit('workout')">Workout: No</button>
+                </div>
+            </div>
 
-  <div id="view-ledger" class="view">
-    <header>
-      <h1>Data Entry</h1>
-    </header>
-    
+            <div class="form-group"><label>Water Intake</label>
+                <div style="display:flex; gap:10px; align-items:center; justify-content:center;">
+                    <button type="button" class="btn btn-sec" style="width:50px" onclick="changeWater(-1)">-</button>
+                    <span id="water-count" style="font-weight:700; font-size:18px;">0</span>
+                    <button type="button" class="btn btn-sec" style="width:50px" onclick="changeWater(1)">+</button>
+                </div>
+            </div>
+
+            <button class="btn" onclick="saveEntry()">Commit Entry</button>
+        </div>
+    </div>
+
     <div class="card">
-      <div class="card-title" id="ledger-form-title">Log Today's Metrics</div>
-      
-      <div class="form-group">
-        <label>Check-in Date</label>
-        <input type="date" id="log-date">
-      </div>
-      
-      <div class="form-row">
-        <div class="form-group">
-          <label>Body Weight (kg)</label>
-          <input type="number" id="log-weight" step="0.1" placeholder="70.0">
+        <div class="card-title">Quick Actions</div>
+        <div class="btn-group">
+            <a href="https://wa.me/YOUR_NUMBER" class="btn btn-sec" style="text-decoration:none; font-size:12px;">WhatsApp</a>
+            <a href="https://forms.gle/YOUR_FORM_LINK" class="btn btn-sec" style="text-decoration:none; font-size:12px;">Weekly Form</a>
         </div>
-        <div class="form-group">
-          <label>Waist Line (inches)</label>
-          <input type="number" id="log-waist" step="0.1" placeholder="28.5">
-        </div>
-      </div>
-
-      <div class="form-row">
-        <div class="form-group">
-          <label>Step Count</label>
-          <input type="number" id="log-steps" placeholder="10000">
-        </div>
-        <div class="form-group">
-          <label>Sleep Duration (hrs)</label>
-          <input type="number" id="log-sleep" step="0.5" placeholder="7.5">
-        </div>
-      </div>
-
-      <div class="form-group">
-        <label>Hunger Quotient (1 - 10 scale)</label>
-        <select id="log-hunger">
-          <option value="1">1 - Extremely Full / No Appetite</option>
-          <option value="2">2 - Well Satiated</option>
-          <option value="3">3 - Satisfied</option>
-          <option value="4">4 - Neutral</option>
-          <option value="5">5 - Mild Appetite</option>
-          <option value="6">6 - Noticeable Hunger</option>
-          <option value="7">7 - Hungry</option>
-          <option value="8">8 - Very Hungry</option>
-          <option value="9">9 - Voracious Craving</option>
-          <option value="10">10 - Starving / Unmanageable</option>
-        </select>
-      </div>
-
-      <div class="form-group">
-        <label>Daily Auditing Notes / Comments</label>
-        <textarea id="log-notes" rows="3" placeholder="Energy anomalies, training updates, stress factors..."></textarea>
-      </div>
-
-      <button class="btn" style="margin-top:8px;" onclick="saveCheckin()">Commit Entry</button>
     </div>
-  </div>
-
-  <div id="view-history" class="view">
-    <header>
-      <h1>Audit Logs</h1>
-      <button class="btn btn-sec" style="width:auto; padding:6px 12px; font-size:12px;" onclick="exportToPDF()">Export Document</button>
-    </header>
-    <div id="history-list"></div>
-  </div>
-
-  <div id="view-profile" class="view">
-    <header>
-      <h1>Profile Setup</h1>
-    </header>
-    
-    <div class="card">
-      <div class="card-title">Demographics & Plan Context</div>
-      <div class="form-group">
-        <label>Full Structural Name</label>
-        <input type="text" id="prof-name" placeholder="John Doe">
-      </div>
-      <div class="form-row">
-        <div class="form-group">
-          <label>Stated Gender</label>
-          <select id="prof-gender">
-            <option value="Female">Female</option>
-            <option value="Male">Male</option>
-            <option value="Non-Binary">Non-Binary</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label>Target Phase Weight (kg)</label>
-          <input type="number" id="prof-target-wt" placeholder="65">
-        </div>
-      </div>
-      <button class="btn" onclick="saveProfile()">Save Parameters</button>
-    </div>
-
-    <div class="card" id="coach-config-card" style="display:none;">
-      <div class="card-title">Administrative Configuration</div>
-      <button class="btn btn-danger" onclick="purgeDatabase()">Purge Local Engine Data</button>
-    </div>
-  </div>
-
-  <nav class="nav-bar" id="app-nav" style="display:none;">
-    <button class="nav-item active" onclick="switchView('dash')">
-      <svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>Dashboard
-    </button>
-    <button class="nav-item" id="nav-ledger-btn" onclick="switchView('ledger')">
-      <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>Log Data
-    </button>
-    <button class="nav-item" id="nav-history-btn" onclick="switchView('history')">
-      <svg viewBox="0 0 24 24"><path d="M13 3c-4.97 0-9 4.03-9 9H1l3.89 3.89.07.14L9 12H6c0-3.87 3.13-7 7-7s7 3.13 7 7-3.13 7-7 7c-1.93 0-3.68-.79-4.94-2.06l-1.42 1.42C8.27 19.99 10.51 21 13 21c4.97 0 9-4.03 9-9s-4.03-9-9-9zm-1 5v5l4.28 2.54.72-1.21-3.5-2.08V8H12z"/></svg>History
-    </button>
-    <button class="nav-item" onclick="switchView('profile')">
-      <svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>Profile
-    </button>
-  </nav>
-
 </div>
 
+<nav class="nav-bar">
+    <button class="nav-item active" onclick="showView('dashboard')">Dashboard</button>
+    <button class="nav-item" onclick="showView('entry')">Entry</button>
+</nav>
+
 <script>
-// ═══════════════════════════════════════
-// GLOBAL ENGINE CONFIGURATION & DATA STRUCTURE
-// ═══════════════════════════════════════
-const STORAGE_KEY = 'shredlane_v1_db';
-let sessionUser = null; 
-let activeView = 'auth';
-
-// Engine Base Seeds
-const BASE_COACH_EMAIL = 'coach@shredlane.com';
-
-function gDB(){
-  let d = localStorage.getItem(STORAGE_KEY);
-  if(!d){
-    const init = {
-      users: {
-        'coach@shredlane.com': { role:'coach', name:'Head Coach', status:'approved' }
-      },
-      checkins: {}, 
-      profiles: {}  
+    let state = {
+        entries: JSON.parse(localStorage.getItem('shred_data') || '[]'),
+        water: 0,
+        habits: { protein: false, workout: false }
     };
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(init));
-    return init;
-  }
-  return JSON.parse(d);
-}
 
-function sDB(o){
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(o));
-}
-
-// Set Today String Utility
-document.getElementById('log-date').value = new Date().toISOString().split('T')[0];
-
-// ═══════════════════════════════════════
-// AUTH ACTIONS
-// ═══════════════════════════════════════
-function handleAuth(){
-  const em = document.getElementById('auth-email').value.trim().toLowerCase();
-  if(!em){ alert('Provide a validation email.'); return; }
-  
-  const d = gDB();
-  
-  // Implicit Account Creation Sequence
-  if(!d.users[em]){
-    d.users[em] = {
-      role: em === BASE_COACH_EMAIL ? 'coach' : 'client',
-      name: em.split('@')[0],
-      status: em === BASE_COACH_EMAIL ? 'approved' : 'pending'
-    };
-    sDB(d);
-  }
-
-  const u = d.users[em];
-  if(u.status === 'pending'){
-    alert('Registration logged. Your access status is currently: PENDING COACH APPROVAL. Contact structural team lead.');
-    return;
-  }
-
-  sessionUser = { email: em, ...u };
-  document.getElementById('app-nav').style.display = 'flex';
-  
-  // Dynamic Visibility adjustments
-  if(sessionUser.role === 'coach'){
-    document.getElementById('coach-summary').style.display = 'block';
-    document.getElementById('client-summary').style.display = 'none';
-    document.getElementById('nav-ledger-btn').style.display = 'none';
-    document.getElementById('nav-history-btn').style.display = 'none';
-    document.getElementById('coach-config-card').style.display = 'block';
-  } else {
-    document.getElementById('coach-summary').style.display = 'none';
-    document.getElementById('client-summary').style.display = 'block';
-    document.getElementById('nav-ledger-btn').style.display = 'flex';
-    document.getElementById('nav-history-btn').style.display = 'flex';
-    document.getElementById('coach-config-card').style.display = 'none';
-    
-    // Load existing structural profiles mapping
-    if(d.profiles[em]){
-      document.getElementById('prof-name').value = d.profiles[em].name || '';
-      document.getElementById('prof-gender').value = d.profiles[em].gender || 'Female';
-      document.getElementById('prof-target-wt').value = d.profiles[em].targetWt || '';
-    }
-  }
-
-  switchView('dash');
-  toast('Success verification: ' + sessionUser.email, 'g');
-}
-
-function logout(){
-  sessionUser = null;
-  document.getElementById('app-nav').style.display = 'none';
-  switchView('auth');
-}
-
-// ═══════════════════════════════════════
-// VIEW ROUTING CONTROLLER
-// ═══════════════════════════════════════
-function switchView(vId){
-  activeView = vId;
-  document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
-  document.getElementById('view-' + vId).classList.add('active');
-
-  document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
-  
-  // Sync Docks Active Matrix states
-  const items = document.querySelectorAll('.nav-item');
-  if(vId === 'dash') items[0].classList.add('active');
-  if(vId === 'ledger') items[1].classList.add('active');
-  if(vId === 'history') items[2].classList.add('active');
-  if(vId === 'profile') items[3].classList.add('active');
-
-  if(vId === 'dash') renderDashboard();
-  if(vId === 'history') renderHistory();
-}
-
-// ═══════════════════════════════════════
-// DATA OPERATIONS (CHECK-INS)
-// ═══════════════════════════════════════
-function saveCheckin(){
-  if(!sessionUser || sessionUser.role !== 'client') return;
-  
-  const dt = document.getElementById('log-date').value;
-  const wt = parseFloat(document.getElementById('log-weight').value);
-  const wa = parseFloat(document.getElementById('log-waist').value);
-  const st = parseInt(document.getElementById('log-steps').value);
-  const sl = parseFloat(document.getElementById('log-sleep').value);
-  const hg = parseInt(document.getElementById('log-hunger').value);
-  const nt = document.getElementById('log-notes').value.trim();
-
-  if(!dt || isNaN(wt) || isNaN(wa)){
-    alert('Date, structural Weight, and Waist metrics are mandatory fields.');
-    return;
-  }
-
-  const d = gDB();
-  if(!d.checkins[sessionUser.email]) d.checkins[sessionUser.email] = [];
-
-  // Upsert pattern integration evaluation
-  const existingIdx = d.checkins[sessionUser.email].findIndex(c => c.date === dt);
-  const payload = { date: dt, weight: wt, waist: wa, steps: st || 0, sleep: sl || 0, hunger: hg, notes: nt };
-
-  if(existingIdx > -1){
-    d.checkins[sessionUser.email][existingIdx] = payload;
-  } else {
-    d.checkins[sessionUser.email].push(payload);
-  }
-
-  // Chronological arrangement Sort mapping
-  d.checkins[sessionUser.email].sort((a,b) => new Date(b.date) - new Date(a.date));
-  sDB(d);
-
-  toast('Metric ledger entry stored.', 'g');
-  switchView('dash');
-}
-
-function removeCheckin(dt){
-  if(!confirm('Execute explicit deletion of metric for entry: ' + dt + '?')) return;
-  const d = gDB();
-  if(!d.checkins[sessionUser.email]) return;
-  d.checkins[sessionUser.email] = d.checkins[sessionUser.email].filter(c => c.date !== dt);
-  sDB(d);
-  toast('Log execution stripped.', 'r');
-  renderHistory();
-}
-
-// ═══════════════════════════════════════
-// PROFILE CONFIGURATIONS
-// ═══════════════════════════════════════
-function saveProfile(){
-  if(!sessionUser || sessionUser.role !== 'client') return;
-  const name = document.getElementById('prof-name').value.trim();
-  const gender = document.getElementById('prof-gender').value;
-  const targetWt = document.getElementById('prof-target-wt').value;
-
-  const d = gDB();
-  d.profiles[sessionUser.email] = { name, gender, targetWt };
-  sDB(d);
-  toast('Structural core metadata updated.', 'g');
-}
-
-function purgeDatabase(){
-  if(!confirm('DANGER: This action fully purges all client structural definitions and history mapping tracking locally. Continue?')) return;
-  localStorage.removeItem(STORAGE_KEY);
-  alert('Engine wiped.');
-  window.location.reload();
-}
-
-// ═══════════════════════════════════════
-// VIEW RENDER ENGINES
-// ═══════════════════════════════════════
-function renderDashboard(){
-  const d = gDB();
-  document.getElementById('dash-welcome').innerText = 'Welcome, ' + sessionUser.name;
-  document.getElementById('dash-role').innerText = sessionUser.role === 'coach' ? 'Structural Head Administrator' : 'Shredlane Asset Athlete';
-
-  if(sessionUser.role === 'coach'){
-    renderAdmin();
-  } else {
-    const logs = d.checkins[sessionUser.email] || [];
-    
-    // Core Mathematical calculations mappings
-    if(logs.length > 0){
-      const latest = logs[0];
-      const oldest = logs[logs.length - 1];
-      const diff = (latest.weight - oldest.weight).toFixed(1);
-
-      document.getElementById('stat-start-wt').innerText = oldest.weight + 'kg';
-      document.getElementById('stat-latest-wt').innerText = latest.weight + 'kg';
-      document.getElementById('stat-w-diff').innerText = (diff > 0 ? '+' : '') + diff + 'kg';
-      document.getElementById('stat-latest-waist').innerText = latest.waist + 'in';
-      document.getElementById('stat-total-logs').innerText = logs.length;
-
-      let sumSleep = 0, sumSteps = 0, sumHunger = 0;
-      logs.forEach(l => { sumSleep += l.sleep; sumSteps += l.steps; sumHunger += l.hunger; });
-      
-      document.getElementById('stat-avg-sleep').innerText = (sumSleep / logs.length).toFixed(1) + 'h';
-      document.getElementById('stat-avg-steps').innerText = Math.round(sumSteps / logs.length).toLocaleString();
-      document.getElementById('stat-avg-hunger').innerText = (sumHunger / logs.length).toFixed(1) + '/10';
-    } else {
-      document.getElementById('stat-start-wt').innerText = '--';
-      document.getElementById('stat-latest-wt').innerText = '--';
-      document.getElementById('stat-w-diff').innerText = '--';
-      document.getElementById('stat-latest-waist').innerText = '--';
-      document.getElementById('stat-total-logs').innerText = '0';
-      document.getElementById('stat-avg-sleep').innerText = '--';
-      document.getElementById('stat-avg-steps').innerText = '--';
-      document.getElementById('stat-avg-hunger').innerText = '--';
-    }
-    renderCalendar(logs);
-  }
-}
-
-function renderCalendar(logs){
-  const container = document.getElementById('cal-container');
-  container.innerHTML = '';
-  
-  const today = new Date();
-  const yr = today.getFullYear();
-  const mth = today.getMonth();
-
-  const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-  document.getElementById('cal-month-title').innerText = months[mth] + ' ' + yr;
-
-  const daysInMonth = new Date(yr, mth + 1, 0).getDate();
-  const startDay = new Date(yr, mth, 1).getDay();
-
-  const daysOfWeek = ['S','M','T','W','T','F','S'];
-  daysOfWeek.forEach(d => {
-    const h = document.createElement('div'); h.className = 'cal-head'; h.innerText = d; container.appendChild(h);
-  });
-
-  for(let i=0; i<startDay; i++){
-    const e = document.createElement('div'); e.className = 'cal-day empty'; container.appendChild(e);
-  }
-
-  const logMap = {};
-  logs.forEach(l => { logMap[l.date] = l; });
-
-  for(let day=1; day<=daysInMonth; day++){
-    const dStr = yr + '-' + String(mth+1).padStart(2,'0') + '-' + String(day).padStart(2,'0');
-    const dayBox = document.createElement('div');
-    dayBox.className = 'cal-day';
-    dayBox.innerText = day;
-
-    if(logMap[dStr]){
-      dayBox.classList.add('has-data');
-      const dot = document.createElement('div'); dot.className = 'cal-dot';
-      dayBox.appendChild(dot);
-    }
-    container.appendChild(dayBox);
-  }
-}
-
-function renderHistory(){
-  const container = document.getElementById('history-list');
-  container.innerHTML = '';
-  const d = gDB();
-  const logs = d.checkins[sessionUser.email] || [];
-
-  if(logs.length === 0){
-    container.innerHTML = '<p style="color:var(--muted); text-align:center; padding:20px;">No historical data parameters cataloged yet.</p>';
-    return;
-  }
-
-  logs.forEach(c => {
-    const item = document.createElement('div');
-    item.className = 'card chk-item';
-    item.innerHTML = `
-      <div class="chk-meta">
-        <div class="chk-date">${c.date}</div>
-        <div class="chk-stats">Wt: ${c.weight}kg · Waist: ${c.waist}in · Steps: ${(c.steps||0).toLocaleString()} · Sleep: ${c.sleep}h · Hunger: ${c.hunger}/10</div>
-        ${c.notes ? `<div style="font-style:italic; color:var(--txt); font-size:12px; margin-top:6px; background:#000; padding:6px; border-radius:4px;">"${c.notes}"</div>` : ''}
-      </div>
-      <div class="chk-actions">
-        <button class="action-btn" onclick="removeCheckin('${c.date}')" style="color:var(--accent);">
-          <svg style="width:18px;height:18px;" viewBox="0 0 24 24"><path fill="currentColor" d="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z" /></svg>
-        </button>
-      </div>
-    `;
-    container.appendChild(item);
-  });
-}
-
-function renderAdmin(){
-  const list = document.getElementById('admin-user-list');
-  list.innerHTML = '';
-  const d = gDB();
-
-  Object.keys(d.users).forEach(em => {
-    const u = d.users[em];
-    if(u.role === 'coach') return; 
-
-    const cLogs = d.checkins[em] || [];
-    const last = cLogs[0] || null;
-    let wDiff = null;
-    let waDiff = null;
-
-    if(cLogs.length > 1){
-      wDiff = (last.weight - cLogs[cLogs.length-1].weight).toFixed(1);
-      waDiff = (last.waist - cLogs[cLogs.length-1].waist).toFixed(1);
+    function showView(v) {
+        document.querySelectorAll('.view').forEach(e => e.classList.remove('active'));
+        document.querySelectorAll('.nav-item').forEach(e => e.classList.remove('active'));
+        document.getElementById('view-' + v).classList.add('active');
+        event.currentTarget.classList.add('active');
+        if(v === 'dashboard') updateDashboard();
     }
 
-    const uBox = document.createElement('div');
-    uBox.className = 'admin-u';
-    uBox.innerHTML = `
-      <div style="display:flex; justify-content:space-between; align-items:center;">
-        <div>
-          <strong style="font-size:15px;">${u.name}</strong> 
-          <span style="font-size:12px; color:var(--muted)">(${em})</span>
-        </div>
-        <div>
-          ${u.status === 'pending' ? 
-            `<button class="btn" style="width:auto; padding:4px 8px; font-size:11px; background:var(--grn); color:#fff;" onclick="approveUser('${em}')">Approve</button>` : 
-            `<span class="badge bg-app">Active Client</span>`
-          }
-          <button class="action-btn" onclick="rejectUser('${em}')" style="color:var(--accent); margin-left:8px; vertical-align:middle;">Strip</button>
-        </div>
-      </div>
-      <div style="font-size:12px; margin-top:6px; color:var(--muted);">
-        ${last ? `<div class="mc-last">
-        Last: ${last.date} · Wt: <strong style="color:${wDiff&&parseFloat(wDiff)<0?'var(--grn)':'var(--red)'}\">${last.weight}kg${wDiff!==null?' ('+(parseFloat(wDiff)>0?'+':'')+wDiff+')':''}</strong> · Waist: <strong style="color:${waDiff&&parseFloat(waDiff)<0?'var(--grn)':'var(--red)'}\">${last.waist}in${waDiff!==null?' ('+(parseFloat(waDiff)>0?'+':'')+waDiff+')':''}</strong> · Steps: ${(last.steps||0).toLocaleString()} · Sleep: ${last.sleep}h · Hunger: ${last.hunger}/10
-        ${last.notes?`<br><em style="color:var(--gry2);font-style:italic\">\"${last.notes}\"</em>`:''}
-      </div>`:''}
-    </div>`;
-    list.appendChild(uBox);
-  });
-}
+    function toggleHabit(h) {
+        state.habits[h] = !state.habits[h];
+        document.getElementById('hab-' + h).innerText = (h === 'protein' ? 'Protein Floor: ' : 'Workout: ') + (state.habits[h] ? 'Yes' : 'No');
+    }
 
-function approveUser(email){
-  const d=gDB();
-  if(d.users[email]){d.users[email].status='approved';sDB(d);}
-  toast('✅ '+email+' approved','g');
-  renderAdmin();
-}
+    function changeWater(n) {
+        state.water = Math.max(0, state.water + n);
+        document.getElementById('water-count').innerText = state.water;
+    }
 
-function rejectUser(email){
-  if(!confirm('Remove '+email+' from the community?'))return;
-  const d=gDB();
-  delete d.users[email];
-  delete d.checkins[email];
-  sDB(d);
-  toast('Removed '+email,'r');
-  renderAdmin();
-}
+    function saveEntry() {
+        const entry = {
+            date: new Date().toISOString().split('T')[0],
+            weight: document.getElementById('in-weight').value,
+            steps: parseInt(document.getElementById('in-steps').value) || 0,
+            sleep: document.getElementById('in-sleep').value,
+            water: state.water,
+            habits: {...state.habits}
+        };
+        state.entries.unshift(entry);
+        localStorage.setItem('shred_data', JSON.stringify(state.entries));
+        alert('Entry Saved!');
+        showView('dashboard');
+    }
 
-// ═══════════════════════════════════════
-// TOAST
-// ═══════════════════════════════════════
-function toast(m, type){
-  const el = document.getElementById('toast');
-  el.innerText = m;
-  el.style.background = type === 'g' ? 'var(--grn)' : 'var(--accent)';
-  el.style.color = '#fff';
-  el.style.display = 'block';
-  el.style.opacity = '1';
-  setTimeout(() => { el.style.opacity = '0'; setTimeout(()=>el.style.display='none', 200); }, 2000);
-}
+    function updateDashboard() {
+        const h = state.entries;
+        if(h.length > 0) {
+            document.getElementById('stat-weight').innerText = h[0].weight + 'kg';
+            document.getElementById('stat-sleep').innerText = h[0].sleep + 'h';
+            
+            // Feature 4: Progress Bars
+            const stepPercent = Math.min(100, (h[0].steps / 10000) * 100);
+            document.getElementById('steps-bar').style.width = stepPercent + '%';
+            
+            const startWeight = h[h.length-1].weight;
+            const currentWeight = h[0].weight;
+            const lost = (startWeight - currentWeight).toFixed(1);
+            document.getElementById('weight-badge').innerText = lost > 0 ? `🔥 You have lost ${lost}kg so far!` : "Keep pushing!";
+        }
+    }
 
-// ═══════════════════════════════════════
-// PROFESSIONAL PDF EXPORT TOOL
-// ═══════════════════════════════════════
-function exportToPDF(){
-  const { jsPDF } = window.jspdf;
-  const doc = new jsPDF();
-  const d = gDB();
-  const logs = d.checkins[sessionUser.email] || [];
+    // Feature 5: Export CSV
+    function exportCSV() {
+        let csv = "Date,Weight,Steps,Sleep,Water,Protein,Workout\n";
+        state.entries.forEach(e => {
+            csv += `${e.date},${e.weight},${e.steps},${e.sleep},${e.water},${e.habits.protein},${e.habits.workout}\n`;
+        });
+        const blob = new Blob([csv], { type: 'text/csv' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'shredlane_data.csv';
+        a.click();
+    }
 
-  if(logs.length === 0){ alert('No structural history array blocks to populate.'); return; }
-
-  // Structural Branding Headers
-  doc.setFont("Helvetica", "bold");doc.setFontSize(22);doc.setTextColor(20,20,20);
-  doc.text('SHREDLANE METRIC LEDGER', 14, 20);
-  
-  doc.setFontSize(10);doc.setFont("Helvetica", "normal");doc.setTextColor(120,120,120);
-  doc.text('Client Accountability Audit Document', 14, 25);
-  doc.line(14, 28, 196, 28);
-
-  // Meta Elements mapping
-  doc.setFontSize(11);doc.setTextColor(60,60,60);
-  doc.text(`Identified Asset: ${sessionUser.email}`, 14, 36);
-  doc.text(`Extraction Timestamp: ${new Date().toLocaleDateString()}`, 14, 42);
-  
-  const p = d.profiles[sessionUser.email] || {};
-  doc.text(`Stated Gender: ${p.gender || 'Not Specified'}   |   Target Phase Matrix Weight: ${p.targetWt || '---'} kg`, 14, 48);
-
-  // Structural Table headers logic mapping layout
-  let y = 60;
-  doc.setFontSize(9);doc.setTextColor(100,100,100);
-  doc.text('Date',14,y);doc.text('Wt(kg)',54,y);doc.text('Waist(in)',78,y);doc.text('Steps',106,y);doc.text('Sleep',130,y);doc.text('Hunger',152,y);doc.text('Notes',176,y);
-  y += 3;doc.line(14,y,196,y);y += 6;doc.setTextColor(20,20,20);
-
-  // Iterative rows render framework engine
-  if (logs && logs.forEach) {
-    logs.forEach((c, i) => {
-      if(y > 275){
-        doc.addPage();y=20;
-        doc.setFont("Helvetica", "bold");doc.setFontSize(12);doc.setTextColor(100,100,100);
-        doc.text('SHREDLANE DATA CONTINUUM LEDGER', 14, y);y+=6;
-        doc.setFont("Helvetica", "normal");
-        doc.setFontSize(9);doc.setTextColor(100,100,100);
-        doc.text('Date',14,y);doc.text('Wt(kg)',54,y);doc.text('Waist(in)',78,y);doc.text('Steps',106,y);doc.text('Sleep',130,y);doc.text('Hunger',152,y);doc.text('Notes',176,y);
-        y+=3;doc.line(14,y,196,y);y+=6;doc.setTextColor(20,20,20);
-      }
-      if(i%2===1){doc.setFillColor(248,248,248);doc.rect(12,y-4,184,6,'F');}
-      doc.text(String(c.date),14,y);
-      doc.text(String(c.weight??''),54,y);
-      doc.text(String(c.waist??''),78,y);
-      doc.text(String((c.steps||0).toLocaleString()),106,y);
-      doc.text(String(c.sleep??''),130,y);
-      doc.text(String(c.hunger??''),152,y);
-      const notes=(c.notes||'').slice(0,28);
-      doc.text(notes,176,y);
-      y+=6;
-    });
-  }
-
-  // Footer Layout setup
-  doc.setFontSize(8);
-  doc.setTextColor(150,150,150);
-  doc.text('Automated Extraction via Shredlane Portal V1 Engine Localized Sync.', 14, 288);
-
-  doc.save(`shredlane_audit_${sessionUser.email.split('@')[0]}.pdf`);
-}
+    updateDashboard();
 </script>
 </body>
 </html>
